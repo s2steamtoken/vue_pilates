@@ -85,7 +85,6 @@ export default {
 </script>
 
 <template>
-    <pre>{{ apiData }}</pre>
     <section class="packages-form-start general-class-all">
         <div class="main-part">
             <div class="row max-width-mob">
