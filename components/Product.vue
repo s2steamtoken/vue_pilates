@@ -27,26 +27,28 @@ export default {
 
 <template>
     <div class="game-each-part">
-        <div class="img-text-info">
-            <div class="game-img-part">
-                <div class="product_thumbnail_wrapper d-flex col-lg-12">
-                    <div @mouseover="imageChange(0)" :class="`product-image-slider w-100 h-100 product-img-first-elem  d-flex justify-content-center align-items-center w-100 h-100 ${active == 0 ? 'active' : ''} main-image`" :style="`z-index: ${mouseOut ? 3 : ((active == 0 ? 3 : 4))}`">
-                        <div class="figure figure-main-img">
-                            <nuxt-link :to="`/${product.url}`" class="">
-                                <img :src="product.image" width="281" height="177" class="game__image"></img>
-                            </nuxt-link>
+        <nuxt-link :to="`/${product.url}`" class="w-100 h-100 d-block">
+            <div class="img-text-info">
+                <div class="game-img-part">
+                    <div class="product_thumbnail_wrapper d-flex col-lg-12">
+                        <div @mouseover="imageChange(0)" :class="`product-image-slider w-100 h-100 product-img-first-elem  d-flex justify-content-center align-items-center w-100 h-100 ${active == 0 ? 'active' : ''} main-image`" :style="`z-index: ${mouseOut ? 3 : ((active == 0 ? 3 : 4))}`">
+                            <div class="figure figure-main-img">
+                                <nuxt-link :to="`/${product.url}`" class="">
+                                    <img :src="product.image" width="281" height="177" class="game__image"></img>
+                                </nuxt-link>
+                            </div>
                         </div>
-                    </div>
-                    <div @mouseout="imageChange(0)" @mouseover="imageChange(bin)" v-for="(image, bin) in product.other_images" :class="`${active == (bin + 1) ? 'active' : ''} other-images-slider d-flex justify-content-center align-items-center product-image-slider w-100 h-100`" :style="`z-index: ${mouseOut ? 4 : ((active == (bin + 1) ? 3 : 4))};`">
-                        <div class="figure">
-                            <nuxt-link :to="`/${product.url}`" class="">
-                                <img :src="image" width="281" height="177" class="game__image other__images"></img>
-                            </nuxt-link>
+                        <div @mouseout="imageChange(0)" @mouseover="imageChange(bin)" v-for="(image, bin) in product.other_images" :class="`${active == (bin + 1) ? 'active' : ''} other-images-slider d-flex justify-content-center align-items-center product-image-slider w-100 h-100`" :style="`z-index: ${mouseOut ? 4 : ((active == (bin + 1) ? 3 : 4))};`">
+                            <div class="figure">
+                                <nuxt-link :to="`/${product.url}`" class="w-100 h-100 d-block">
+                                    <img :src="image" width="281" height="177" class="game__image other__images"></img>
+                                </nuxt-link>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </nuxt-link>
         <div class="bg-gray-part">
             <button @click="changeWishlist(product)" :class="product.in_wishlist ? 'active' : ''"
                 class="add-to-wishlist btn-add-product">

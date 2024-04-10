@@ -2354,7 +2354,7 @@ button {
 }
 
 .packages-for-offer .bg-dark-after:hover .info-part {
-    transform: translateY(4em);
+    transform: translateY(2em);
 }
 
 .packages-for-offer .img-part {

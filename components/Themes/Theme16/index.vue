@@ -95,7 +95,7 @@ async function passwordRun() {
                             <div class="padding-part">
                                 <div class="d-flex justify-content-center">
                                     <nuxt-link :to="`/${item.url}`" class="btn-select">
-                                        {{ translate(' Select package') }}
+                                        {{ item.id == apiData.package.id ? translate('Selected Package') : translate('Selected Package') }}
                                     </nuxt-link>
                                 </div>
                                 <div class="info-part">
