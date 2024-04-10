@@ -1,0 +1,97 @@
+/* ___________Marcellus______________ */
+
+@font-face {
+    font-family: "Marcellus-Regular";
+    src: url("./../fonts//Marcellus-Regular.ttf");
+    font-style: normal;
+    font-weight: 400;
+    /* Thin  */
+    font-display: swap;
+}
+
+
+/* ___________NeuePlak______________ */
+
+@font-face {
+    font-family: "NeuePlak";
+    src: url("./../fonts//NeuePlak/NeuePlak-UltraLight.ttf");
+    font-style: normal;
+    font-weight: 300;
+    /* Thin  */
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "NeuePlak";
+    src: url("./../fonts//NeuePlak/NeuePlak-Regular.ttf");
+    font-style: normal;
+    font-weight: 400;
+    /* Thin  */
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "NeuePlak";
+    src: url("./../fonts//NeuePlak/NeuePlak-Thin.ttf");
+    font-style: normal;
+    font-weight: 500;
+    /* Thin  */
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "NeuePlak";
+    src: url("./../fonts//NeuePlak/NeuePlak-Text-Regular.ttf");
+    font-style: normal;
+    font-weight: 600;
+    /* Thin  */
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "NeuePlak";
+    src: url("./../fonts//NeuePlak/NeuePlak-SemiBold.ttf");
+    font-style: normal;
+    font-weight: 700;
+    /* Thin  */
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "NeuePlak";
+    src: url("./../fonts//NeuePlak/NeuePlak-Bold.ttf");
+    font-style: normal;
+    font-weight: 800;
+    /* Thin  */
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "NeuePlak";
+    src: url("./../fonts//NeuePlak/NeuePlak-ExtraBlack.ttf");
+    font-style: normal;
+    font-weight: 900;
+    /* Thin  */
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "NeuePlak";
+    src: url("./../fonts//NeuePlak/NeuePlak-Black.ttf");
+    font-style: normal;
+    font-weight: 950;
+    /* Thin  */
+    font-display: swap;
+}
+
+
+/* ___________Boiling______________ */
+
+@font-face {
+    font-family: "Boiling";
+    src: url("./../fonts//Boiling/Boiling-BlackDemo.ttf");
+    font-style: normal;
+    font-weight: 900;
+    /* Thin  */
+    font-display: swap;
+}

@@ -1,0 +1,194 @@
+@media(max-width:1440px) {
+    .btn-primary {
+        margin-right: 2em;
+    }
+    /*header*/
+    .header .dropdown-menu .number-of-product {
+        top: 22%;
+    }
+    .header .main-header nav ul li a {
+        font-size: 1rem;
+    }
+    /* .header .main-header nav ul {
+        grid-gap: 0 1em;
+    } */
+    /*header*/
+    /*theme_2*/
+    .product-categories .single-product {
+        width: 16.75em;
+    }
+    /*theme_2*/
+    /*theme_4*/
+    .pillates-banner-start {
+        height: 33em;
+    }
+    .pillates-banner-start .pilates-image {
+        width: 19em;
+    }
+    .pillates-banner-start .appearing-part {
+        width: 27.75em;
+        height: 5.8em;
+    }
+    @keyframes right {
+        0% {
+            left: 0px;
+            opacity: 0;
+        }
+        25% {
+            left: 160px;
+            opacity: 1;
+        }
+        50% {
+            left: 160px;
+            opacity: 1;
+        }
+        75% {
+            left: 160px;
+            opacity: 1;
+        }
+        100% {
+            left: 0px;
+            opacity: 0;
+        }
+    }
+    @keyframes left {
+        0% {
+            right: 0px;
+            opacity: 0;
+        }
+        25% {
+            right: 160px;
+            opacity: 1;
+        }
+        50% {
+            right: 160px;
+            opacity: 1;
+        }
+        75% {
+            right: 160px;
+            opacity: 1;
+        }
+        100% {
+            right: 0px;
+            opacity: 0;
+        }
+    }
+    /*theme_4*/
+    /*theme_5*/
+    .news-ticker-h li a {
+        font-size: 4rem;
+    }
+    /*theme_5*/
+    /*theme_6*/
+    .packages-part-start .bg-dark-part {
+        width: 95%;
+        height: 80%;
+        left: 2.5%;
+        top: 12.5%;
+    }
+    .packages-part-start .info-part {
+        padding: 1em 1.8em;
+    }
+    .packages-part-start .packages-part-text.hidden {
+        top: 14%;
+    }
+    .backofcard::after {
+        height: 84%;
+        top: 8%;
+    }
+    .packages-part-start .packages-part-text.hidden {
+        font-size: 2rem;
+    }
+    /*theme_6*/
+    /*theme_10*/
+    .coaches-banner-part .main-img img,
+    .coaches-banner-part .main-img::after {
+        width: 20em;
+        height: 20em;
+    }
+    .coaches-banner-part .main-img::after {
+        transform: translate(-50%, -60%);
+    }
+    /*theme_10*/
+    /*theme_11*/
+    .regulation-start-part .main-info-grid-part {
+        grid-gap: 3.75em 2em;
+    }
+    /*theme_11*/
+    /*theme_14*/
+    /* .pillates-shop-single .filter-checkbox .check-image {
+        width: 100%;
+    } */
+    /*theme_14*/
+    /*theme_17*/
+    .packages-for-offer .single-part-packages .padding-part {
+        padding: 1em;
+    }
+    .packages-for-offer .single-part-packages {
+        min-height: 25.75em;
+    }
+    .packages-for-offer .bg-color-info {
+        padding: 1em;
+    }
+    .packages-for-offer .single-part-packages .info-part {
+        top: 53%;
+    }
+    .check-your-info input:checked~span:after {
+        transform: translate(-100%, -50%);
+    }
+    /*theme_17*/
+    /*theme_18*/
+    .packages-form-start .first-part {
+        padding: 3.75em 5em 3.75em 3em;
+    }
+    /*theme_18*/
+    /*theme_20*/
+    .checkout-pilates .first-part {
+        padding: 3.75em;
+    }
+    .checkout-pilates .grid-gap-back {
+        grid-gap: 0 1em;
+    }
+    .checkout-pilates .second-part {
+        padding-top: 5.75em !important;
+    }
+    /*theme_20*/
+    /*theme_21*/
+    .signin-signup .signin-main-part {
+        padding: 3.75em 6.75em;
+    }
+    /*theme_21*/
+    /*theme_22*/
+    .my-account .bg-white-link {
+        padding: 1em;
+        min-width: 12em;
+    }
+    /* .my-account .bg-white-link .img-part {
+    width: 2em;
+    height: 2em;
+} */
+    .my-account .oval-inside-text {
+        font-size: 1.2rem;
+        max-width: 8em;
+    }
+    .my-account .oval {
+        width: 14em;
+        height: 5.875em;
+    }
+    /*theme_22*/
+    /*theme_26*/
+    .error-page .error-main-image img {
+        max-width: 65em;
+    }
+    /*theme_26*/
+    /*footer*/
+    .footer-logo img {
+        width: 24em;
+    }
+    /*footer*/
+    @media (min-width: 1025px) {
+        .checkout-pilates .second-part {
+            padding: 1.75em 1em;
+        }
+    }
+}

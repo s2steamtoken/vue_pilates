@@ -1,0 +1,264 @@
+@media(max-width:1024px) {
+    /*check-your-info*/
+    .check-your-info {
+        margin-bottom: 1.5em;
+    }
+    /*check-your-info*/
+    /*theme_01*/
+    .header {
+        padding: 1em 0;
+    }
+    .header .logo-part {
+        width: 8.6em;
+    }
+    .header .main-header nav ul li a {
+        font-size: 1.1rem;
+    }
+    /*theme_01*/
+    /*theme_2*/
+    .product-categories .single-product {
+        width: 10.75em;
+    }
+    /*theme_2*/
+    /*theme_3*/
+    .about-pillates .main-part {
+        padding: 5.1em 5.4em;
+    }
+    .about-pillates .bg-image-part .main-part-bg {
+        padding: 2.3em 3em;
+    }
+    .about-pillates .bg-image-part {
+        background-size: cover;
+    }
+    /*theme_3*/
+    /*theme_4*/
+    .pillates-banner-start {
+        height: 21em;
+    }
+    .pillates-banner-start .pilates-image {
+        width: 13em;
+    }
+    .pillates-banner-start .appearing-part {
+        width: 20em;
+        height: 4.8em;
+    }
+    .pillates-banner-start .appearing-part.second {
+        left: 5%;
+    }
+    .pillates-banner-start .appearing-text {
+        font-size: 2rem;
+    }
+    .pillates-banner-start .appearing-part.third {
+        top: 10%;
+    }
+    .pillates-banner-start .appearing-part.fourth {
+        bottom: 16%;
+        right: 6%;
+    }
+    .pillates-banner-start .appearing-part.first {
+        top: 16%;
+        left: 7%;
+    }
+    .pillates-banner-start .appearing-part {
+        width: 21.75em;
+        height: 5em;
+    }
+    .pillates-banner-start .appearing-part.second {
+        bottom: 17%;
+        left: 7%;
+    }
+    .pillates-banner-start .appearing-part.third {
+        right: 8%;
+        top: 16%;
+    }
+    .pillates-banner-start .appearing-part.fourth {
+        right: 8%;
+    }
+    @keyframes right {
+        0% {
+            left: 0px;
+            opacity: 0;
+        }
+        25% {
+            left: 80px;
+            opacity: 1;
+        }
+        50% {
+            left: 80px;
+            opacity: 1;
+        }
+        75% {
+            left: 80px;
+            opacity: 1;
+        }
+        100% {
+            left: 0px;
+            opacity: 0;
+        }
+    }
+    @keyframes left {
+        0% {
+            right: 0px;
+            opacity: 0;
+        }
+        25% {
+            right: 80px;
+            opacity: 1;
+        }
+        50% {
+            right: 80px;
+            opacity: 1;
+        }
+        75% {
+            right: 80px;
+            opacity: 1;
+        }
+        100% {
+            right: 0px;
+            opacity: 0;
+        }
+    }
+    /*theme_4*/
+    /*theme_6*/
+    .packages-part-start .bg-dark-part {
+        top: 8.5%;
+    }
+    .packages-part-start .justify-content-mob {
+        justify-content: center;
+    }
+    .pillates-shop-single .pillates-shop-single-title {
+        max-width: 7em;
+    }
+    .backofcard::after {
+        height: 92%;
+        top: 4%;
+    }
+    /*theme_6*/
+    /*theme_7*/
+    .star-products-part .mb-mob {
+        margin-bottom: 1em;
+    }
+    /*theme_7*/
+    /*theme_9*/
+    .special-programs .product-part {
+        width: 100%;
+    }
+    .special-programs .bg-gray-part .special-program-title {
+        text-align: center;
+    }
+    .special-programs .specia-program-text {
+        margin: auto;
+        max-width: 100%;
+    }
+    .special-programs .mb-mob {
+        margin-bottom: 1em;
+    }
+    /*theme_9*/
+    /*theme_10*/
+    .coaches-banner-part .main-img {
+        height: 20em;
+    }
+    .coaches-banner-part .main-img::after {
+        transform: translate(-50%, -50%);
+    }
+    /*theme_10*/
+    /*theme_11*/
+    .regulation-start-part .main-info-grid-part {
+        grid-template-columns: 100%;
+    }
+    /*theme_11*/
+    /*theme_14*/
+    .pillates-shop-single .text-part {
+        padding: 0.5em 3em;
+    }
+    .pillates-shop-single .single-part-text {
+        font-size: 1rem;
+    }
+    .product-main-text-part li {
+        padding-left: 1em
+    }
+    .pillates-shop-single .single-part.height-part img {
+        height: 17.25em;
+    }
+    /*theme_14*/
+    /*theme_16*/
+    .pillates-shop-single.gift-card .filter-li-product {
+        grid-template-columns: 1fr 1fr;
+    }
+    /*theme_16*/
+    /*theme_17*/
+    .packages-form-start .first-part {
+        padding: 3.75em 1em;
+    }
+    .packages-form-start .check-your-info {
+        margin-bottom: 0;
+    }
+    .packages-form-start .margin-bottom-part {
+        margin-bottom: 1em;
+    }
+    .packages-part-start .single-part-packages:hover .single-packages-hover {
+        transform: none;
+    }
+    .packages-part-start .hidden {
+        opacity: 1 !important;
+        height: unset;
+    }
+    .packages-part-start .backofcard {
+        transform: none;
+    }
+    .backofcard::after {
+        height: 100%;
+        top: 0;
+    }
+    .packages-part-start .info-part {
+        opacity: 1;
+    }
+    .packages-part-start .justify-content-mob {
+        grid-gap: 1em;
+    }
+    /*     
+    .general-class-all label {
+        font-size: 0.88rem;
+    } */
+    /*theme_17*/
+    /*theme_18*/
+    .packages-for-offer .grid-gap-mob {
+        grid-gap: 1em 0;
+        justify-content: center !important;
+    }
+    /*theme_18*/
+    /*theme_20*/
+    .checkout-pilates .first-part {
+        padding: 1.75em;
+    }
+    .checkout-pilates .second-part {
+        padding: 1.75em 1em;
+    }
+    .checkout-pilates .inputs-part {
+        grid-gap: 1.5em;
+    }
+    .checkout-pilates .mb-mob-part {
+        margin-bottom: 1em;
+    }
+    /*theme_20*/
+    /*theme_21*/
+    .signin-signup .signin-main-part {
+        padding: 1.75em 2.75em;
+    }
+    /*theme_21*/
+    /*theme_22*/
+    .my-account .oval {
+        margin-bottom: 1em;
+    }
+    .my-account .bg-white-link {
+        min-width: 10em;
+    }
+    /*theme_22*/
+    /*theme_26*/
+    /*theme_26*/
+    /*footer*/
+    .footer {
+        padding: 1.5em 0 1.5em 0;
+    }
+    /*footer*/
+}

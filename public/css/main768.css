@@ -1,0 +1,284 @@
+@media(max-width:768px) {
+    .news-ticker-h li a {
+        font-size: 3rem;
+    }
+    /* .max-width-mob {
+    max-width: 100%;
+} */
+    .empty-image-part {
+        width: 19.5em;
+    }
+    .display-none-desktop {
+        display: block;
+    }
+    .display-none-mob {
+        display: none !important;
+    }
+    .mob-menu-button {
+        background: #B2937E;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 3em;
+        height: 3em;
+    }
+    .mob-menu-button img {
+        width: 2rem;
+        height: 1rem;
+    }
+    .display-none-mob.mob-menu-part-hidden.opened {
+        display: block !important;
+        position: fixed;
+        top: 0%;
+        padding: 4em;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--bs-light);
+        z-index: 10000;
+        overflow-y: scroll;
+    }
+    .display-none-mob .logo-part {
+        width: 8.6em;
+    }
+    .display-none-mob.mob-menu-part-hidden .mob-menu-button img {
+        height: 3rem;
+        width: 3rem;
+    }
+    .display-none-mob.mob-menu-part-hidden ul {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        margin-top: 2em;
+    }
+    .display-none-mob.mob-menu-part-hidden ul li {
+        list-style: none;
+        margin-bottom: 2em;
+    }
+    .display-none-mob.mob-menu-part-hidden ul li a {
+        color: var(--bs-gray);
+        /* background-color: #B2937E1F; */
+        padding: 0.75em 1em;
+        border-radius: 50%;
+    }
+    .banner-part-start .main-part .text-part {
+        padding-top: 15em;
+    }
+    .display-none-mob.mob-menu-part-hidden {
+        transition: opacity 0.5s linear;
+        -webkit-transition: opacity 0.5s linear;
+        -moz-transition: opacity 0.5s linear;
+        -o-transition: opacity 0.5s linear;
+        -ms-transition: opacity 0.5s linear;
+    }
+    .display-none-mob.mob-menu-part-hidden.opened {
+        padding: 3em 1em;
+    }
+    .header.header-position-absolute~.display-none-mob.mob-menu-part-hidden.opened {
+        padding: 4em;
+    }
+    /*theme_1*/
+    .banner-part-start .main-part .text-part .banner-part-start-title {
+        max-width: 100%;
+        font-size: 4rem;
+    }
+    /*theme_1*/
+    /*theme_3*/
+    .about-pillates .main-part {
+        padding: 2.1em 1.4em;
+    }
+    /*theme_3*/
+    /*theme_4*/
+    @keyframes right {
+        0% {
+            left: 0px;
+            opacity: 0;
+        }
+        25% {
+            left: 40px;
+            opacity: 1;
+        }
+        50% {
+            left: 40px;
+            opacity: 1;
+        }
+        75% {
+            left: 40px;
+            opacity: 1;
+        }
+        100% {
+            left: 0px;
+            opacity: 0;
+        }
+    }
+    @keyframes left {
+        0% {
+            right: 0px;
+            opacity: 0;
+        }
+        25% {
+            right: 40px;
+            opacity: 1;
+        }
+        50% {
+            right: 40px;
+            opacity: 1;
+        }
+        75% {
+            right: 40px;
+            opacity: 1;
+        }
+        100% {
+            right: 0px;
+            opacity: 0;
+        }
+    }
+    /*theme_4*/
+    /*theme_6*/
+    .packages-part-start .bg-dark-part {
+        top: 2.5%;
+        height: 90%;
+    }
+    .about-pillates .bg-image-part .main-part-bg {
+        padding: 1.3em 2em;
+    }
+    .pillates-banner-start .appearing-part.first {
+        top: 20%;
+        left: 4%;
+    }
+    .pillates-banner-start .appearing-part.second {
+        bottom: 14%;
+        left: 4%;
+    }
+    .pillates-banner-start .appearing-part.third {
+        right: 5%;
+        top: 20%;
+    }
+    .pillates-banner-start .appearing-part.fourth {
+        right: 4%;
+        bottom: 14%;
+    }
+    .pillates-banner-start .appearing-part {
+        width: 18.75em;
+        height: 5em;
+    }
+    .pillates-banner-start .appearing-text {
+        font-size: 1.5rem;
+    }
+    .pillates-banner-start {
+        height: 17em;
+    }
+    /* .pillates-banner-start {
+    align-items: flex-start;
+} */
+    .pillates-banner-start .pilates-image {
+        width: 12em;
+    }
+    .pillates-banner-start .appearing-part {
+        width: 16.75em;
+        height: 4em;
+    }
+    /*theme_6*/
+    /*theme_7*/
+    .star-products-part .bg-gray-sytart {
+        padding: 3.9em;
+    }
+    /*theme_7*/
+    /*theme_14*/
+    .product-main-text-part li {
+        padding-left: 2em
+    }
+    .pillates-shop-single .single-part.height-part img {
+        height: 13.25em;
+    }
+    /*theme_14*/
+    /*theme_17*/
+    /*theme_17*/
+    /*theme_18*/
+    /* .packages-for-offer {
+    padding: 1em 0;
+} */
+    /* .packages-for-offer .main-img {
+    object-fit: cover;
+}
+
+.packages-for-offer .bg-dark-part {
+    height: 100%;
+    top: 0%;
+    width: 95.9%;
+    left: 2%;
+}
+
+.packages-form-start .second-part {
+    padding: 11em 0;
+} */
+    /*theme_18*/
+    /*theme_20*/
+    .checkout-pilates .second-part {
+        padding: 1.75em !important;
+    }
+    .checkout-pilates .mob-d-block {
+        display: flex !important;
+        padding: 2em 2em 0 2em;
+    }
+    .checkout-pilates .flex-direction-mob {
+        flex-direction: column-reverse;
+    }
+    /*theme_20*/
+    /*theme_21*/
+    .signin-signup .background-white-part {
+        width: unset !important;
+        padding-top: 5.1em;
+        padding-bottom: 5.1em;
+    }
+    /*theme_21*/
+    /*theme_22*/
+    .my-account .bg-white-link {
+        margin-bottom: 1em;
+    }
+    .my-account form {
+        max-width: 100%;
+    }
+    /*theme_22*/
+    /*theme_24*/
+    .my-account.order-history .order-history-single {
+        padding: 1em;
+    }
+    .my-account.order-history .order-history-single {
+        margin-bottom: 1em;
+    }
+    .my-account.order-history .bg-white-part {
+        grid-gap: 1em 0;
+    }
+    /*theme_24*/
+    /*theme_25*/
+    .my-account.address .grid-gap-between-mob {
+        grid-gap: 1em 0;
+    }
+    /*theme_25*/
+    /*footer*/
+    .footer-logo img {
+        width: 20em;
+    }
+    .footer .footer-title {
+        font-size: 2rem;
+    }
+    .footer .main-part {
+        height: 30.75em;
+    }
+    .menu-footer-mobile {
+        display: none;
+    }
+    /*footer*/
+    /*product*/
+    .product .game-each-part .img-text-info .product_thumbnail_wrapper {
+        height: 28em;
+    }
+    .product .add-to-wishlist.btn-add-product {
+        left: 1em;
+    }
+    .product .add-cart-product.btn-add-product {
+        right: 1em;
+    }
+    /*product*/
+}
