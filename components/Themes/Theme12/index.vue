@@ -21,35 +21,35 @@ export default {
         apiData: {},
         globalData: {},
     },
-    mounted() {
+    // mounted() {
 
-        let scriptYandexMap = document.createElement('script');
-        scriptYandexMap.setAttribute('src', this.globalData.map_url);
-        document.head.appendChild(scriptYandexMap);
+    //     let scriptYandexMap = document.createElement('script');
+    //     scriptYandexMap.setAttribute('src', this.globalData.map_url);
+    //     document.head.appendChild(scriptYandexMap);
 
-        scriptYandexMap.addEventListener("load", this.initializeYandexMap);
-    },
-    methods: {
-        initializeYandexMap() {
-            ymaps.ready(() => {
-                this.mapLoaded = true;
-            });
-        },
-        chooseShop: function (shop) {
+    //     scriptYandexMap.addEventListener("load", this.initializeYandexMap);
+    // },
+    // methods: {
+    //     initializeYandexMap() {
+    //         ymaps.ready(() => {
+    //             this.mapLoaded = true;
+    //         });
+    //     },
+    //     chooseShop: function (shop) {
 
-            shop.active = true;
+    //         shop.active = true;
 
-            for (let i in this.apiData.shops) {
-                if (this.apiData.shops[i].id != shop.id) {
-                    this.apiData.shops[i].active = false
-                }
-            }
+    //         for (let i in this.apiData.shops) {
+    //             if (this.apiData.shops[i].id != shop.id) {
+    //                 this.apiData.shops[i].active = false
+    //             }
+    //         }
 
-            this.zoomCoord = shop.coordinates
+    //         this.zoomCoord = shop.coordinates
 
-            document.getElementById('mapElement').scrollIntoView({ behavior: 'smooth' });
-        },
-    }
+    //         document.getElementById('mapElement').scrollIntoView({ behavior: 'smooth' });
+    //     },
+    // }
 };
 </script>
 <template>

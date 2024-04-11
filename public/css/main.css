@@ -1246,7 +1246,7 @@ button {
 .packages-part-start .packages-part-text {
     color: var(--bs-white);
     font-size: 2.5rem;
-    top: 48%;
+    top: 82%;
     left: 20%;
     position: absolute;
 }
