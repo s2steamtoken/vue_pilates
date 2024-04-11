@@ -18,10 +18,11 @@ a:focus-visible {
     outline: none !important
 }
 
-.page_sign-in .header,
+
+/*page_sign-in .header,
 .page_checkout .header {
     display: none;
-}
+}*/
 
 .display-none-desktop {
     display: none;
@@ -970,6 +971,16 @@ button {
     width: 31.333333% !important;
     position: relative;
     z-index: 1;
+    transition: all 0.3s;
+}
+
+.about-pillates .single-part-main:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+.about-pillates .single-part-main:hover .subtitle-pillates {
+    color: #b2937e !important
 }
 
 
