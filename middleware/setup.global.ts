@@ -2,7 +2,6 @@ export default defineNuxtRouteMiddleware(async (to, from) => {
     
     const { session, refresh, update, reset } = await useSession()
 
-    console.log('aaaa');
     const $store = useNuxtApp()
     $store.sessionUpdate = update;
 
@@ -19,7 +18,6 @@ export default defineNuxtRouteMiddleware(async (to, from) => {
     }
 
     if(segments[0] !== "admin" && segments[0] != "_nuxt" && segments[0] != "lib"){
-        console.log("SEGMENTS " + segments[0]);
 
         if(segments[0] != "" && langs.includes(segments[0])){
             siteLang = segments[0];
@@ -51,6 +49,7 @@ export default defineNuxtRouteMiddleware(async (to, from) => {
             site_lang: content.site_lang,
             langUrl: langUrl,
             website_url: content.website_url,
+            currencies: content.currencies,
             currency: content.currency,
             currency_title: content.currency_title,
             fixed_menu: content.fixed_menu,
