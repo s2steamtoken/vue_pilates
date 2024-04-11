@@ -5,6 +5,6 @@ module.exports = {
         instances: '1', // Or a number of instances
         script: './node_modules/nuxt/bin/nuxt.mjs',
         args: 'start',
-        port: '3014',
+        port: '3015',
     }]
 }
