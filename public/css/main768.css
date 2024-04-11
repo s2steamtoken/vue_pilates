@@ -178,6 +178,9 @@
         width: 16.75em;
         height: 4em;
     }
+    .packages-part-start .single-part-packages {
+        width: 66.66666667%;
+    }
     /*theme_6*/
     /*theme_7*/
     .star-products-part .bg-gray-sytart {

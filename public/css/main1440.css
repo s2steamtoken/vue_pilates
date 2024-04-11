@@ -97,12 +97,12 @@
     .packages-part-start .packages-part-text.hidden {
         top: 14%;
     }
-    .backofcard::after {
-        height: 84%;
-        top: 8%;
-    }
     .packages-part-start .packages-part-text.hidden {
         font-size: 2rem;
+    }
+    .packages-part-start .single-part-packages:hover .hidden-img,
+    .packages-part-start .single-part-packages .shown-img {
+        height: 26.75em;
     }
     /*theme_6*/
     /*theme_10*/

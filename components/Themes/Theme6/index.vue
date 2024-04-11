@@ -56,6 +56,7 @@ export default {
                                         {{ item.text }}
                                     </p>
                                 </div>
+                                <h3 class="packages-part-text shown d-mob-show-title">{{ item.name }}</h3>
                             </div> 
                             <div class="bg-dark-part"></div>
                         </nuxt-link>

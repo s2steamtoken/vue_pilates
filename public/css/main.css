@@ -1241,6 +1241,7 @@ button {
 
 .packages-part-start .single-part-packages .hidden-img {
     border-radius: 1.5em;
+    object-fit: cover;
 }
 
 .packages-part-start .single-part-packages:hover .hidden-img {
@@ -1324,6 +1325,10 @@ button {
 .packages-part-start .list-img {
     width: 1.125em;
     height: 1.125em;
+}
+
+.packages-part-start .d-mob-show-title {
+    display: none;
 }
 
 

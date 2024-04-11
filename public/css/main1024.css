@@ -20,7 +20,7 @@
     /*theme_01*/
     /*theme_2*/
     .product-categories .single-product {
-        width: 10.75em;
+        width: 11.75em;
     }
     /*theme_2*/
     /*theme_3*/
@@ -132,9 +132,18 @@
     .pillates-shop-single .pillates-shop-single-title {
         max-width: 7em;
     }
-    .backofcard::after {
-        height: 92%;
-        top: 4%;
+    .packages-part-start .packages-part-text.hidden {
+        transform: translate(-50%, 0%);
+        top: 9%;
+    }
+    .packages-part-start .single-part-packages {
+        width: 49%;
+    }
+    .packages-part-start .d-mob-show-title {
+        display: block;
+        color: #ffff !important;
+        left: 15%;
+        z-index: 1;
     }
     /*theme_6*/
     /*theme_7*/
@@ -207,15 +216,19 @@
     }
     .packages-part-start .hidden {
         opacity: 1 !important;
-        height: unset;
+        height: 25em;
     }
     .packages-part-start .backofcard {
         transform: none;
+        position: relative;
     }
-    .backofcard::after {
+    .frontofcard {
+        display: none;
+    }
+    /* .backofcard::after {
         height: 100%;
         top: 0;
-    }
+    } */
     .packages-part-start .info-part {
         opacity: 1;
     }
