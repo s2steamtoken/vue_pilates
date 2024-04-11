@@ -20,7 +20,7 @@ export default defineNuxtConfig({
             link: [
                 // { rel: 'icon', type: 'image/x-icon', href: '/logoIcon.svg' },
                 { rel: 'stylesheet', type: 'text/css', href: '/lib/bootstrap/css/bootstrap.css?5' },
-                { rel: 'stylesheet', type: 'text/css', href: '/css/font.css' },
+                { rel: 'stylesheet', type: 'text/css', href: '/css/font.css?1' },
                 { rel: 'stylesheet', type: 'text/css', href: '/css/main.css' },
                 { rel: 'stylesheet', type: 'text/css', href: '/css/main1440.css' },
                 { rel: 'stylesheet', type: 'text/css', href: '/css/main1024.css' },
