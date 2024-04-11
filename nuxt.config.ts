@@ -49,6 +49,8 @@ export default defineNuxtConfig({
         '@sidebase/nuxt-session',
         "@nuxt/image"
     ],
+    swiper: {
+    },
     session: {
         // Module is enabled
         isEnabled: true,
