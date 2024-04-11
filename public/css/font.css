@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: "Marcellus-Regular";
-    src: url("./../fonts//Marcellus-Regular.ttf");
+    src: url("./../fonts/Marcellus-Regular.ttf");
     font-style: normal;
     font-weight: 400;
     /* Thin  */
@@ -14,7 +14,7 @@
 
 @font-face {
     font-family: "NeuePlak";
-    src: url("./../fonts//NeuePlak/NeuePlak-UltraLight.ttf");
+    src: url("./../fonts/NeuePlak/NeuePlak-UltraLight.ttf");
     font-style: normal;
     font-weight: 300;
     /* Thin  */
@@ -23,7 +23,7 @@
 
 @font-face {
     font-family: "NeuePlak";
-    src: url("./../fonts//NeuePlak/NeuePlak-Regular.ttf");
+    src: url("./../fonts/NeuePlak/NeuePlak-Regular.ttf");
     font-style: normal;
     font-weight: 400;
     /* Thin  */
@@ -32,7 +32,7 @@
 
 @font-face {
     font-family: "NeuePlak";
-    src: url("./../fonts//NeuePlak/NeuePlak-Thin.ttf");
+    src: url("./../fonts/NeuePlak/NeuePlak-Thin.ttf");
     font-style: normal;
     font-weight: 500;
     /* Thin  */
@@ -41,7 +41,7 @@
 
 @font-face {
     font-family: "NeuePlak";
-    src: url("./../fonts//NeuePlak/NeuePlak-Text-Regular.ttf");
+    src: url("./../fonts/NeuePlak/NeuePlak-Text-Regular.ttf");
     font-style: normal;
     font-weight: 600;
     /* Thin  */
@@ -50,7 +50,7 @@
 
 @font-face {
     font-family: "NeuePlak";
-    src: url("./../fonts//NeuePlak/NeuePlak-SemiBold.ttf");
+    src: url("./../fonts/NeuePlak/NeuePlak-SemiBold.ttf");
     font-style: normal;
     font-weight: 700;
     /* Thin  */
@@ -59,7 +59,7 @@
 
 @font-face {
     font-family: "NeuePlak";
-    src: url("./../fonts//NeuePlak/NeuePlak-Bold.ttf");
+    src: url("./../fonts/NeuePlak/NeuePlak-Bold.ttf");
     font-style: normal;
     font-weight: 800;
     /* Thin  */
@@ -68,7 +68,7 @@
 
 @font-face {
     font-family: "NeuePlak";
-    src: url("./../fonts//NeuePlak/NeuePlak-ExtraBlack.ttf");
+    src: url("./../fonts/NeuePlak/NeuePlak-ExtraBlack.ttf");
     font-style: normal;
     font-weight: 900;
     /* Thin  */
@@ -77,7 +77,7 @@
 
 @font-face {
     font-family: "NeuePlak";
-    src: url("./../fonts//NeuePlak/NeuePlak-Black.ttf");
+    src: url("./../fonts/NeuePlak/NeuePlak-Black.ttf");
     font-style: normal;
     font-weight: 950;
     /* Thin  */
@@ -89,7 +89,7 @@
 
 @font-face {
     font-family: "Boiling";
-    src: url("./../fonts//Boiling/Boiling-BlackDemo.ttf");
+    src: url("./../fonts/Boiling/Boiling-BlackDemo.ttf");
     font-style: normal;
     font-weight: 900;
     /* Thin  */
