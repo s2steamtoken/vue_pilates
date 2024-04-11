@@ -80,7 +80,7 @@ export default {
 </script>
 
 <template>
-    <section class="shop-start-part">
+ <section class="shop-start-part">
         <div class="container">
             <div class="main-part">
                 <div class="row justify-content-between">
@@ -142,16 +142,6 @@ export default {
                                                         </div>
                                                     </label>
                                                 </div>
-
-                                                <!-- <div class="filter-checkbox">
-                                                    <input :id="`list_${list.id}`" :name="`feature_${feature.id}`" type="radio"
-                                                        class="category-filter" :value="`list_${list.id}`" @change="filter">
-                                                    <label :for="`list_${list.id}`">
-                                                        <span>
-                                                            {{ list.name }}
-                                                        </span>
-                                                    </label>
-                                                </div> -->
                                             </li>
                                         </ul>
                                         <ul class="size-part" v-if="feature.type == 'checkbox'">
@@ -202,5 +192,5 @@ export default {
                 </div>
             </div>
         </div>
-    </section>
+ </section> 
 </template>

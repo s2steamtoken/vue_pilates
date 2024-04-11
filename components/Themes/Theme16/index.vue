@@ -80,7 +80,7 @@ async function passwordRun() {
 
 
 <template>
-    <section class="packages-for-offer">
+     <section class="packages-for-offer">
         <div class="container">
             <div class="main-part">
                <h3 class="special-programs-title main-title">

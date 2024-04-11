@@ -408,7 +408,7 @@ export default {
 
 <template>
     
-    <div v-if="data?.themes != undefined" :class="`${data?.site_lang}`">
+    <div v-if="data?.themes != undefined" :class="`${data?.site_lang} page_${$store.segments.join('_')}`">
 
         <Seo :content="data?.seo" />
 

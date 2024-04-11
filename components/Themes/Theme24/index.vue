@@ -29,7 +29,7 @@ export default {
 </script>
 
 <template v-if="apiData.orders != undefined">
-    <sectiion class="my-account order-history">
+  <sectiion class="my-account order-history">
         <div class="container">
             <div class="row justify-content-between align-items-center mb-5 mob-justify-center">
                 <AccountSidebar></AccountSidebar>
@@ -60,9 +60,6 @@ export default {
                                     <p class="order-history-text">
                                         {{ order.total }} {{ globalData.currency }}
                                     </p>
-                                    <!-- <p class="order-history-text" v-for="item in order.products">
-                                        {{ item.count }} items
-                                    </p> -->
                                     <p class="cancelled-part">  {{ order.status_name }}</p>
                                 </div>
                             </div>
@@ -84,7 +81,6 @@ export default {
                             <div v-if="item.product != undefined" class="col-lg-6 col-md-6 col-sm-12 col-12"  >
                                 <div class="d-flex justify-content-between align-items-center mob-wrap-part">
                                     <div class="d-flex img-text-grid align-items-center">
-                                        <!-- <pre>{{ item.product }}</pre> -->
                                         <div class="image-part">
                                             <nuxt-img :src="item.product.image" width="120" height="150" class="" alt=""></nuxt-img>
                                         </div>
@@ -94,9 +90,6 @@ export default {
                                             </h5>
                                             <template v-for="feature in item.selected_features">
                                                 <p class="size-part">{{ feature.feature_name }}:<span>{{ feature.list_name }}</span></p>
-                                                <!-- <div class="text-part">
-                                                    <p class="color"><span></span>Sage</p>
-                                                </div> -->
                                             </template>
                                         </div>
                                     </div>
@@ -108,13 +101,7 @@ export default {
                 </div>
             </div>
         </div>
-    </sectiion>
+  </sectiion> 
 
 </template>
 
-<!-- <script>
-    $('.click-to-open').click(function() {
-        $(".my-account-hidden-part").toggleClass("opened");
-        $(".click-to-open").toggleClass("ope")ned;
-    })
-</script> -->

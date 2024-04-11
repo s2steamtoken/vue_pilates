@@ -57,7 +57,7 @@ export default {
 };
 </script>
 <template>
-    <section class="my-account wishlist-part-start">
+     <section class="my-account wishlist-part-start">
         <div class="container">
             <div class="row justify-content-between align-items-center mb-5 mob-justify-center">
                 <AccountSidebar></AccountSidebar>
@@ -273,5 +273,5 @@ export default {
                 </div>
             </div>
         </div>
-    </section>
+    </section> 
 </template>

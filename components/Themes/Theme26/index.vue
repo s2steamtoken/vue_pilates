@@ -88,7 +88,7 @@ export default {
 
 </script>
 <template>
-    <section class="signin-signup forgot-password">
+     <section class="signin-signup forgot-password">
         <div class="row justify-content-center max-width-mob">
             <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                 <div class="signin-main-part">
@@ -139,5 +139,5 @@ export default {
                 </div>
             </div>
         </div>
-    </section>
+    </section> 
 </template>

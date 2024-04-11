@@ -153,7 +153,7 @@ export default {
 </script>
 
 <template>
-    <section class="checkout-pilates general-class-all" v-if="cartData.list.length > 0">
+   <section class="checkout-pilates general-class-all" v-if="cartData.list.length > 0">
         <div class="main-part">
             <div class="row flex-direction-mob">
                 <div class="col-lg-6 col-md-6">
@@ -330,13 +330,6 @@ export default {
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
-                    <!-- <div class="align-items-center grid-gap-back mob-d-block">
-                        <a class="add-to-basket" href="">
-                            <img src="/images/bag.svg" class="" width="24" height="24">
-                        </a>
-                        <a href="index.php" class="back-link-part">Back</a>
-                    </div> 
-                 v-if="cartData.list.length > 0"-->
                     <div class="row align-items-center grid-gap-part mob-d-block">
                         <div class="col-lg-3 col-md-4 col-sm-4 col-3">
                             <div class="d-flex align-items-center grid-gap-back">
@@ -402,14 +395,13 @@ export default {
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-body py-4 text-center">
-                    <!-- <img class="mb-4" width="110" height="130" style="height: 7em" src="/images/order_placed_icon.svg"> -->
                     <h3 class="font-24 bold mb-3">{{ translate('Order is placed') }}</h3>
                     <p class="font-18 px-4 text-center">{{ translate('Order #${order_id} has been successfully placed and is in the process of confirmation.').replace('${order_id}', order_id) }}</p>
                     <nuxt-link :to="`/${globalData.langUrl}my-orders`" class="btn btn-primary fw-bold text-center mx-auto">{{ translate('OK') }}</nuxt-link>
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
 </template>
 <style scoped>
 .header{

@@ -25,5 +25,5 @@ export default {
                 </ul>
             </div>
         </div>
-    </section>
+    </section> 
 </template>

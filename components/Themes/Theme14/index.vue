@@ -70,7 +70,7 @@ export default {
 
 
 <template>
-    <section class="pillates-shop-single">
+   <section class="pillates-shop-single">
         <div class="container">
             <div class="main-part">
                 <div class="row">
@@ -97,7 +97,7 @@ export default {
                             <h4 class="pillates-shop-single-title"> {{ product.name }}</h4>
                             <p class="pillates-price"> {{ product.price }} {{ globalData.currency_title }}</p>
                         </div>
-                        <!-- <div class="star-rating">
+                        <div class="star-rating">
                             <div class="color-stars" style="width: 100%;">
                                 <img width="16" height="16" src="/images/star.svg">
                                 <img width="16" height="16" src="/images/star.svg">
@@ -112,7 +112,7 @@ export default {
                                 <img width="16" height="16" src="/images/starempty.svg">
                                 <img width="16" height="16" src="/images/starempty.svg">
                             </div>
-                        </div> -->
+                        </div>
                         <div class="d-flex justify-content-between align-items-center mb-product-part">
                             <template v-for="feature in product.features">
                                 <h5 v-if="feature.type == 'color'" class="color-title-part">
@@ -184,6 +184,6 @@ export default {
                 </div>
             </div>
         </div>
-    </section>
+   </section> 
 
 </template>

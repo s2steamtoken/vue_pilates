@@ -132,7 +132,7 @@ export default {
 </script>
 
 <template>
-    <section class="signin-signup">
+     <section class="signin-signup">
         <div class="row max-width-mob">
             <div class="col-lg-6 col-md-6 col-sm-12 col-12 bg-pink-light">
                 <div class="signin-main-part">
@@ -231,23 +231,6 @@ export default {
                                                 <div class="invalid-feedback">{{ validateUserErrors.repeat_password }}</div>
                                         </div>
                                     </div>
-                                    <!-- <p class="verification-text">{{ translate('Send verification code') }}</p>
-                                    <div class="d-flex justify-content-center check-your-info">
-                                        <div>
-                                            <label for="emailme">
-                                                <input type="checkbox" id="emailme" name="emailme" />
-                                                <span></span>
-                                                {{ translate('Email address') }}
-                                            </label>
-                                        </div>
-                                        <div>
-                                            <label for="phonenumber">
-                                                <input type="checkbox" id="phonenumber" name="phonenumber" />
-                                                <span></span>
-                                                {{ translate('Phone number') }}
-                                            </label>
-                                        </div>
-                                    </div> -->
                                     <div class="text-center">
                                         <button type="submit" class="btn-dark show-hide w-100">{{ translate('Next') }}</button>
                                     </div>
@@ -276,6 +259,6 @@ export default {
                 </div>
             </div>
         </div>
-    </section>
+    </section> 
 
 </template>

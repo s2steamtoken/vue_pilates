@@ -11,15 +11,15 @@ export default {
 };
 </script>
 <template>
- <section class="special-programs" id="special-programs">
+    <section class="special-programs" id="special-programs">
         <div class="container new-container">
             <div class="main-part">
                 <h3 class="special-programs-title main-title">
                     {{ content.title_text }}               
-                 </h3>
+                    </h3>
                 <p class="special-programs-text main-subtitle">
                     {{ content.subtitle_text }}               
-                 </p>
+                    </p>
                 <div class="bg-gray-part swiper bg-color">
                     <Swiper 
                             v-if="content.append_images.length != 0" ref="swiperVertival"

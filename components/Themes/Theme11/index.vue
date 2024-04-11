@@ -15,7 +15,7 @@ export default {
 };
 </script>
 <template>
-    <section class="regulation-start-part" id="regulations">
+ <section class="regulation-start-part" id="regulations">
         <div class="container">
             <div class="main-part">
                 <h2 class="regulation-start-part-title main-title">{{ content.title_text }}</h2>
@@ -43,5 +43,5 @@ export default {
                 </div>
             </div>
         </div>
-    </section>
+ </section> 
 </template>
