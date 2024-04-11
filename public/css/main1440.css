@@ -13,6 +13,11 @@
         grid-gap: 0 1em;
     } */
     /*header*/
+    /*product*/
+    .product .game-each-part .img-text-info .product_thumbnail_wrapper {
+        height: 28em;
+    }
+    /*product*/
     /*theme_2*/
     .product-categories .single-product {
         width: 16.75em;

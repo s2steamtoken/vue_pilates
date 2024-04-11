@@ -520,7 +520,7 @@ button {
 }
 
 .product .game-each-part .img-text-info .product_thumbnail_wrapper {
-    height: 28em;
+    height: 34em;
 }
 
 .product .game-img-part .product-image-slider .figure {
@@ -741,6 +741,10 @@ button {
 
 .pillates-shop-single .add-to-wishlist .white-heart {
     display: none;
+}
+
+.pillates-shop-single .choose-sizes .filter-checkbox label span {
+    text-transform: uppercase;
 }
 
 .product .add-cart-product.btn-add-product {
@@ -1839,6 +1843,10 @@ button {
     border: 1px solid black
 }
 
+.shop-start-part .category .router-link-active {
+    font-weight: 500;
+}
+
 
 /* .shop-start-part .size-part li {
     display: grid;
@@ -1995,6 +2003,8 @@ button {
 
 .pillates-shop-single .single-part img {
     border-radius: 1em;
+    object-fit: cover;
+    height: 100%;
 }
 
 .pillates-shop-single .pillates-shop-single-title {
@@ -2156,6 +2166,10 @@ button {
 .count-div {
     margin-bottom: 1.5em;
 } */
+
+.recomended-part-start .recomended-part-title {
+    margin-bottom: 1em;
+}
 
 .count-div button {
     padding: 0;
