@@ -14,6 +14,9 @@
     .header .main-header nav ul li a {
         font-size: 1.1rem;
     }
+    .added-products-ul {
+        height: 22em;
+    }
     /*theme_01*/
     /*theme_2*/
     .product-categories .single-product {
@@ -179,6 +182,9 @@
     }
     .pillates-shop-single .single-part.height-part img {
         height: 17.25em;
+    }
+    .pillates-shop-single .choose-sizes .filter-li-product .filter-checkbox label {
+        font-size: 1rem;
     }
     /*theme_14*/
     /*theme_16*/

@@ -9,9 +9,9 @@
     .header .main-header nav ul li a {
         font-size: 1rem;
     }
-    /* .header .main-header nav ul {
-        grid-gap: 0 1em;
-    } */
+    .added-products-ul {
+        height: 24em;
+    }
     /*header*/
     /*product*/
     .product .game-each-part .img-text-info .product_thumbnail_wrapper {
@@ -121,9 +121,9 @@
     }
     /*theme_11*/
     /*theme_14*/
-    /* .pillates-shop-single .filter-checkbox .check-image {
-        width: 100%;
-    } */
+    .pillates-shop-single .choose-sizes .filter-li-product .filter-checkbox label {
+        font-size: 1.2rem;
+    }
     /*theme_14*/
     /*theme_17*/
     .packages-for-offer .single-part-packages .padding-part {

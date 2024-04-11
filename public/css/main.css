@@ -381,7 +381,7 @@ button {
 }
 
 .added-products-ul {
-    height: 27em;
+    height: 37em;
     overflow: scroll;
 }
 
@@ -982,6 +982,14 @@ button {
     color: #b2937e !important
 }
 
+.about-pillates .single-part-main:hover .mob-d-none {
+    display: none;
+}
+
+.about-pillates .single-part-main:hover .mob-d-block {
+    display: block;
+}
+
 
 /*theme_3*/
 
@@ -1231,13 +1239,20 @@ button {
     height: 0
 }
 
+.packages-part-start .single-part-packages .hidden-img {
+    border-radius: 1.5em;
+}
+
 .packages-part-start .single-part-packages:hover .hidden-img {
     opacity: 1;
     height: 29.75em;
+    object-fit: cover;
 }
 
 .packages-part-start .single-part-packages .shown-img {
     height: 29.75em;
+    border-radius: 1.5em;
+    object-fit: cover;
 }
 
 .packages-part-start .single-part-packages:hover .packages-part-text.shown {
@@ -1850,7 +1865,7 @@ button {
 }
 
 .shop-start-part .choose-color-part input:checked~.bg-color {
-    border: 1px solid black
+    border: 2px solid black
 }
 
 .shop-start-part .category .router-link-active {
@@ -1903,6 +1918,10 @@ button {
     min-width: 3.2em;
 }
 
+.shop-start-part .mob-filter-open .size-part li label span {
+    text-transform: uppercase;
+}
+
 .shop-start-part .mob-filter-open .size-part :checked+label {
     background-color: var(--bs-gray);
     color: white;
@@ -1932,6 +1951,17 @@ button {
     text-transform: uppercase;
     font-size: 1.5rem;
     font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    width: 100%;
+    box-shadow: 0 2px 2px -2px var(--bs-gray);
+    background: white;
+    border-radius: 0.25em;
+    height: 2em;
+    min-width: 3.2em;
 }
 
 .shop-start-part .bg-color {
@@ -2141,7 +2171,8 @@ button {
     border-radius: 0.25em;
     height: 2.8em;
     padding: 0 4em;
-    min-width: 9em;
+    min-width: 3em;
+    max-width: 3em;
 }
 
 .pillates-shop-single .choose-sizes .filter-li-product .filter-checkbox .pillates-shop-single .choose-color {

@@ -97,7 +97,7 @@ export default {
                             <h4 class="pillates-shop-single-title"> {{ product.name }}</h4>
                             <p class="pillates-price"> {{ product.price }} {{ globalData.currency_title }}</p>
                         </div>
-                        <div class="star-rating">
+                        <!-- <div class="star-rating">
                             <div class="color-stars" style="width: 100%;">
                                 <img width="16" height="16" src="/images/star.svg">
                                 <img width="16" height="16" src="/images/star.svg">
@@ -112,7 +112,7 @@ export default {
                                 <img width="16" height="16" src="/images/starempty.svg">
                                 <img width="16" height="16" src="/images/starempty.svg">
                             </div>
-                        </div>
+                        </div> -->
                         <div class="d-flex justify-content-between align-items-center mb-product-part">
                             <template v-for="feature in product.features">
                                 <h5 v-if="feature.type == 'color'" class="color-title-part">
@@ -171,7 +171,7 @@ export default {
                                 </CartCount>                        
                             </div>
                             <button @click="productAddToCart(product, product.cart_count)" :disabled="product.out_of_stock" type="button"
-                                :class="`add-to-cart btn-add-product ${product.cart_id != '' ? 'active' : ''}`">
+                                :class="`add-to-cart btn-add-product ${product.cart_id != '' ? 'active' : ''}`" data-bs-toggle="modal" data-bs-target="#addtoCart">
                                 {{ translate('Add to cart') }}
                             </button>
                         </div>

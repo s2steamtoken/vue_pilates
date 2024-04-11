@@ -14,7 +14,7 @@ export default {
 </script>
 
 <template>
-    <div v-if="cartData.count > 0" class="cart-pop-up">
+    <div v-if="cartData.count > 0" class="cart-pop-up" id="cartModal">
         <div class="main-part">
             <ul class="added-products-ul">
                 <template v-for="item in cartData.list">

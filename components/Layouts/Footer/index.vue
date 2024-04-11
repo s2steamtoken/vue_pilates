@@ -31,7 +31,7 @@ export default {
                     </div>
                     <hr>
                     <div class="last-part-footer">
-                        <h6 class="last-footer-title">{{ translate('This website is made by') }}<a
+                        <h6 class="last-footer-title">{{ translate('This website is made by') }}<a target="blank"
                                 href="https://www.s2s.am"> S2S</a></h6>
                         <div class="footer-text-part">@2024
                             <template v-for="menu in globalData.menus">

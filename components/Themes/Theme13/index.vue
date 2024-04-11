@@ -118,9 +118,8 @@ export default {
                                             <li class="category checkbox" v-for="sorting in apiData.sorting">
                                                 <div class="filter-checkbox check-your-info">
                                                     <input :id="`sorting_${sorting.key}`" type="radio"
-                                                    class="category-filter" value="34" :name="`sorting_${sorting.id}`" 
-                                                    v-model="formData.order_by" @change="filter"
-                                                    :value="sorting.key">
+                                                    class="category-filter" :value="sorting.key" :name="`sorting_${sorting.id}`" 
+                                                    v-model="formData.order_by" @change="filter">
                                                     <label :for="`sorting_${sorting.key}`">
                                                         {{ sorting.name }}
                                                     </label>
