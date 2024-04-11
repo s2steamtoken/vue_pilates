@@ -13,7 +13,7 @@ export default {
 
 </script>
 <template>
-    <!-- <section class="star-products-part" id="machines">
+     <section class="star-products-part" id="machines">
         <div class="main-part">
             <div class="container">
                 <h2 class="main-title">{{ content.title_text }}</h2>
@@ -59,7 +59,7 @@ export default {
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 </template>
 
 

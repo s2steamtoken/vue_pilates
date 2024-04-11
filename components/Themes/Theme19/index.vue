@@ -219,7 +219,7 @@ export default {
                                     <label for="pickup">
                                         <input v-model="checkout.is_delivery" type="radio" id="pickup" name="delivery" value="0"  checked />
                                         <span></span>
-                                        {{ translate('Delivery (*Free shipping is available for purchases over 50,000 drams)') }}
+                                        {{ translate('Pick up') }}
                                     </label>
                                 </div>
                                 <div class="check-your-info mb-4">
@@ -227,7 +227,7 @@ export default {
                                         <input v-model="checkout.is_delivery" type="radio" id="delivery"
                                             name="delivery" value="1" />
                                         <span></span>
-                                        {{ translate('Pick up') }}
+                                        {{ translate('Delivery (*Free shipping is available for purchases over 50,000 drams)') }}
                                     </label>
                                 </div>
                                 <div class="row mb-3" v-if="checkout.is_delivery == 1">

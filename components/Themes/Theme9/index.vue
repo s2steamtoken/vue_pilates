@@ -11,7 +11,7 @@ export default {
 };
 </script>
 <template>
-    <!-- <section class="special-programs" id="special-programs">
+ <section class="special-programs" id="special-programs">
         <div class="container new-container">
             <div class="main-part">
                 <h3 class="special-programs-title main-title">
@@ -54,6 +54,6 @@ export default {
                 </div>
             </div>
         </div>
-    </section> -->
+    </section> 
 
 </template>
