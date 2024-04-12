@@ -209,7 +209,7 @@ export default {
             <ul>
                 <template v-for="menu in globalData.menus">
                     <li v-if="menu.position_type.includes('header')">
-                        <nuxt-link :to="`/${menu.url}`">
+                        <nuxt-link :to="`/${menu.url}`" @click="openMenu">
                             {{ menu.name }}
                         </nuxt-link>
                     </li>

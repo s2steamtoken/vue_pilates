@@ -35,9 +35,6 @@
                 height: 2em;
                 width: 2em;
             }
-            .check-your-info label {
-                font-size: 0.9rem;
-            }
             .banner-part-start .main-part .text-part {
                 padding-top: 10em;
             }
@@ -260,15 +257,12 @@
             .packages-part-start {
                 margin: 3.5em 0;
             }
-            .packages-part-start .info-part .main-info-title {
-                font-size: 0.875rem
-            }
-            .packages-part-start .info-part .text-part {
-                font-size: 0.75rem;
+            .packages-part-start .info-part {
+                min-width: 26em;
+                padding: 1em;
             }
             .packages-part-start .info-part {
-                min-width: 24em;
-                padding: 1em;
+                top: 60%;
             }
             .packages-part-start .single-part-packages:hover .hidden-img {
                 height: 20em;
@@ -284,12 +278,6 @@
             }
             .packages-part-start .single-part-packages .shown-img {
                 height: 23.75em;
-            }
-            .packages-part-start .info-part {
-                top: 52%;
-            }
-            .packages-part-start .packages-part-text.hidden {
-                font-size: 1.5rem
             }
             .packages-part-start .justify-content-mob {
                 grid-gap: 1em 0;
