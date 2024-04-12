@@ -116,7 +116,7 @@ export default {
                                         <h5 class="shop-start-title">{{ translate('Sort by') }}</h5>
                                         <ul>
                                             <li class="category checkbox" v-for="sorting in apiData.sorting">
-                                                <div class="filter-checkbox check-your-info">
+                                                <div class="filter-checkbox check-your-info-sort">
                                                     <input :id="`sorting_${sorting.key}`" type="radio"
                                                     class="category-filter" :value="sorting.key" :name="`sorting_${sorting.id}`" 
                                                     v-model="formData.order_by" @change="filter">
@@ -133,9 +133,9 @@ export default {
                                         <h5 class="shop-start-title">{{ feature.name }}</h5>
                                         <ul v-if="feature.type == 'color'" class="choose-color-part">
                                             <li v-for="list in feature.list">
-                                                <div class="filter-checkbox check-your-info">
+                                                <div class="filter-checkbox check-your-info-color">
                                                     <label :for="`list_${list.id}`">
-                                                        <input :id="`list_${list.id}`" :name="`feature_${feature.id}`" type="radio" 
+                                                        <input :id="`list_${list.id}`" :name="`feature_${feature.id}`" type="checkbox" 
                                                         class="category-filter" :value="list.id" @change="filter" v-model="formData.features[feature.id]" >
                                                         <div class="bg-color" :style="`background-color:${list.color}`">
                                                         </div>
@@ -146,7 +146,7 @@ export default {
                                         <ul class="size-part" v-if="feature.type == 'checkbox'">
                                             <li v-for="list in feature.list">
                                                 <div class="filter-checkbox">
-                                                    <input :id="`list_${list.id}`" :name="`feature_${feature.id}`" type="radio"
+                                                    <input :id="`list_${list.id}`" :name="`feature_${feature.id}`" type="checkbox"
                                                         class="category-filter" :value="list.id" @change="filter" v-model="formData.features[feature.id]">
                                                     <label :for="`list_${list.id}`">
                                                         <span>
@@ -177,6 +177,11 @@ export default {
                     </div>
                     <div class="col-lg-10 col-md-9 col-sm-8 col-12">
                         <div class="row product">
+                            <div v-if="apiData.products.length == 0" class="empty-product-shop">
+                                <div class="empty-image-part">
+                                    <img src="/images/empty.svg" class="" width="" height="">
+                                </div>
+                            </div>
                             <div v-for="product in apiData.products" class="col-lg-3 col-md-6 col-sm-6 col-6 mb-3">
                                 <Product :product="product"></Product>
                             </div>

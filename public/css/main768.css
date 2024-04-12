@@ -83,6 +83,11 @@
         font-size: 4rem;
     }
     /*theme_1*/
+    /*theme_2*/
+    .product-categories .single-product {
+        width: 14.75em;
+    }
+    /*theme_2*/
     /*theme_3*/
     .about-pillates .main-part {
         padding: 2.1em 1.4em;
@@ -187,6 +192,14 @@
         padding: 3.9em;
     }
     /*theme_7*/
+    /*theme_13*/
+    .shop-start-part .empty-product-shop {
+        padding: 2em;
+    }
+    .shop-start-part .empty-image-part {
+        width: 20em;
+    }
+    /*theme_13*/
     /*theme_14*/
     .product-main-text-part li {
         padding-left: 2em

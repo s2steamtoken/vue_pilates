@@ -179,6 +179,11 @@
         grid-template-columns: 100%;
     }
     /*theme_11*/
+    /*theme_13*/
+    .shop-start-part .empty-image-part {
+        width: 25em;
+    }
+    /*theme_13*/
     /*theme_14*/
     .pillates-shop-single .text-part {
         padding: 0.5em 3em;

@@ -120,6 +120,14 @@
         grid-gap: 3.75em 2em;
     }
     /*theme_11*/
+    /*theme_13*/
+    .shop-start-part .empty-product-shop {
+        padding: 3em;
+    }
+    .shop-start-part .empty-image-part {
+        width: 30em;
+    }
+    /*theme_13*/
     /*theme_14*/
     .pillates-shop-single .choose-sizes .filter-li-product .filter-checkbox label {
         font-size: 1.2rem;
