@@ -136,7 +136,7 @@ export default {
                                                 <div class="filter-checkbox check-your-info">
                                                     <label :for="`list_${list.id}`">
                                                         <input :id="`list_${list.id}`" :name="`feature_${feature.id}`" type="radio" 
-                                                        class="category-filter" :value="list.id" @change="filter" v-model="formData.order_by">
+                                                        class="category-filter" :value="list.id" @change="filter" v-model="formData.features[feature.id]" >
                                                         <div class="bg-color" :style="`background-color:${list.color}`">
                                                         </div>
                                                     </label>
@@ -147,7 +147,7 @@ export default {
                                             <li v-for="list in feature.list">
                                                 <div class="filter-checkbox">
                                                     <input :id="`list_${list.id}`" :name="`feature_${feature.id}`" type="radio"
-                                                        class="category-filter" :value="list.id" @change="filter" v-model="formData.order_by">
+                                                        class="category-filter" :value="list.id" @change="filter" v-model="formData.features[feature.id]">
                                                     <label :for="`list_${list.id}`">
                                                         <span>
                                                             {{ list.name }}
