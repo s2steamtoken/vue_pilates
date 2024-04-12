@@ -83,7 +83,7 @@ async function passwordRun() {
             <div class="row justify-content-center align-items-center mb-5 mob-justify-center">
                 <AccountSidebar></AccountSidebar>
             </div>
-            <div class="form mb-4">
+            <div class="form margin-bottom-form">
                 <h4 class="my-account-title">{{ translate('Account Information') }}</h4>
                 <div class="row">
                     <div class="col-lg-6 mb-4">

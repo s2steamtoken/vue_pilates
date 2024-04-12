@@ -135,10 +135,12 @@ export default {
                                                 <input name="payment_method" v-model="checkout.payment_method"
                                                     type="radio" :id="`payment_${payment_method.key}`" :value="payment_method.key" />
                                                 <span></span>
+                                            </label>
+                                            <div class="d-flex align-items-center grid-gap-part">
                                                 {{ payment_method.name }}
                                                 <nuxt-img :src="payment_method.icon" width="50" height="32" class="">
                                                 </nuxt-img>
-                                            </label>
+                                            </div>
                                         </div>
                                     </div>
                                 </template>
@@ -147,8 +149,8 @@ export default {
                                 <label for="agreeterms">
                                     <input type="checkbox" id="agreeterms" name="agreeterms" />
                                     <span></span>
-                                    {{ translate('I agree with the provisions and conditions, privacy policy club regulations.') }}
                                 </label>
+                                {{ translate('I agree with the provisions and conditions, privacy policy club regulations.') }}
                             </div>
                             <div class="text-center">
                                 <button type="submit" class="btn-dark mt-3 w-100"><span>{{ translate('Pay Now') }}</span></button>
