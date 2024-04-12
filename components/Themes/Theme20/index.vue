@@ -180,7 +180,7 @@ export default {
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                 <div class="row w-100 background-white-part justify-content-center">
-                    <div class="col-lg-10 col-md-12 col-sm-10 col-10">
+                    <div class="col-lg-10 col-md-12 col-sm-10 col-11">
                         <h2 class="signin-title">{{ translate('Sign Up') }}</h2>
                         <p class="signin-text sign-up-text">{{ translate('Enter your details to create a Pilates account') }}</p>
                         <p class="signin-text sign-up-next">{{ translate('To confirm the registration, enter the code sent to your phone number') }}</p>
@@ -233,10 +233,6 @@ export default {
                                     </div>
                                     <div class="text-center">
                                         <button type="submit" class="btn-dark show-hide w-100">{{ translate('Next') }}</button>
-                                    </div>
-                                    <div class="d-flex text-center justify-content-center">
-                                        <p class="text-sign-in">{{ translate('Already have an account?') }} <a href="" class="sign-in-link">
-                                            {{ translate('Sign In') }}</a></p>
                                     </div>
                                 </div>
                             </div>

@@ -7,11 +7,13 @@ const logOut = inject('logOut')
 </script>
 
 <template>
-    <div class="col-lg-2">
-        <div class="oval">
-            <p class="oval-inside-text">{{ translate('Welcome to your Pilates Account') }}</p>
+    <!-- <div class="col-lg-2">
+        <div class="row">
+            <div class="oval">
+                <p class="oval-inside-text">{{ translate('Welcome to your Pilates Account') }}</p>
+            </div>
         </div>
-    </div>
+    </div> -->
     <div class="col-auto">
         <div class="row">
             <div class="col-sm-auto col-12">

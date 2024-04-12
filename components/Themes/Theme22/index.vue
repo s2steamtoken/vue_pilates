@@ -59,7 +59,7 @@ export default {
 <template>
      <section class="my-account wishlist-part-start">
         <div class="container">
-            <div class="row justify-content-between align-items-center mb-5 mob-justify-center">
+            <div class="row justify-content-center align-items-center mb-5 mob-justify-center">
                 <AccountSidebar></AccountSidebar>
             </div>
             <div class="row justify-content-between product">

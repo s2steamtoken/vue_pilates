@@ -176,7 +176,7 @@ export default {
 <template>
     <section class="my-account address">
         <div class="container">
-            <div class="row justify-content-between align-items-center mb-5 mob-justify-center">
+            <div class="row justify-content-center align-items-center mb-5 mob-justify-center">
                 <AccountSidebar></AccountSidebar>
             </div>
             <div class="row grid-gap-between-mob justify-content-between">

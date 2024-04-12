@@ -80,10 +80,11 @@ async function passwordRun() {
 <template>
     <section class="my-account">
         <div class="container">
-            <div class="row justify-content-between align-items-center mb-5 mob-justify-center">
+            <div class="row justify-content-center align-items-center mb-5 mob-justify-center">
                 <AccountSidebar></AccountSidebar>
             </div>
             <div class="form mb-4">
+                <h4 class="my-account-title">{{ translate('Account Information') }}</h4>
                 <div class="row">
                     <div class="col-lg-6 mb-4">
                         <div class="your-opinion-inputs">
@@ -125,6 +126,7 @@ async function passwordRun() {
                 </div>
             </div>
             <div class="form">
+                <h4 class="my-account-title">{{ translate('Change Password') }}</h4>
                 <div class="row">
                     <div class="col-lg-6 mb-4">
                         <div class="your-opinion-inputs">

@@ -158,7 +158,7 @@ export default {
             <div class="row flex-direction-mob">
                 <div class="col-lg-6 col-md-6">
                     <div class="first-part">
-                        <div class="row align-items-center grid-gap-part display-none-mob">
+                        <div class="row align-items-center grid-gap-part">
                             <div class="col-lg-3 col-md-4 col-sm-4 col-3">
                                 <div class="d-flex align-items-center grid-gap-back">
                                     <nuxt-link  :to="`/${globalData.langUrl}shop`" class="add-to-basket">
@@ -330,21 +330,25 @@ export default {
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
-                    <div class="row align-items-center grid-gap-part mob-d-block">
+                    <!-- <div class="row align-items-center grid-gap-part mob-d-block">
                         <div class="col-lg-3 col-md-4 col-sm-4 col-3">
                             <div class="d-flex align-items-center grid-gap-back">
-                                <a class="add-to-basket" href="">
-                                    <nuxt-img src="/images/bag.svg" class="" width="24" height="24"></nuxt-img>
-                                </a>
-                                <a href="index.php" class="back-link-part">Back</a>
+                                <nuxt-link  :to="`/${globalData.langUrl}shop`" class="add-to-basket">
+                                    <nuxt-img src="/images/bag.svg" class="" width="24" height="24">
+                                    </nuxt-img>
+                                </nuxt-link>
+                                <nuxt-link  :to="`/${globalData.langUrl}`" class="back-link-part">
+                                    {{ translate('Back') }}
+                                </nuxt-link>
                             </div>
                         </div>
                         <div class="col-auto">
-                            <div class="img-part">
-                                <nuxt-img src="/images/logopilatesboutique.svg" width="259" height="93"></nuxt-img>
-                            </div>
+                            <nuxt-link  :to="`/${globalData.langUrl}`" class="img-part">
+                                <nuxt-img src="/images/logopilatesboutique.svg" width="259" height="93">
+                                </nuxt-img>
+                            </nuxt-link>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="second-part" >
                         <div class="gift-card-content" v-if="cartData.list.length > 0" >
                             <div class="gift-card-row" v-for="item in cartData.list" :key="item.cart_id">

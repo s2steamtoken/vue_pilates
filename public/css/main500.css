@@ -20,13 +20,16 @@
                 font-size: 1.5rem;
             }
             .display-none-mob .logo-part {
-                width: 6em;
+                width: 7em;
+            }
+            .header {
+                padding: 0;
             }
             .header.header-position-absolute~.display-none-mob.mob-menu-part-hidden.opened {
                 padding: 3em 1.5em;
             }
             .display-none-mob.mob-menu-part-hidden.opened {
-                padding: 3em 0.8em;
+                padding: 2em 0.8em !important;
             }
             .display-none-mob.mob-menu-part-hidden .mob-menu-button img {
                 height: 2em;
@@ -90,7 +93,7 @@
                 padding: 3em 1em;
             }
             .header .logo-part {
-                width: 6em;
+                width: 7em;
             }
             .mob-menu-button {
                 width: 2em;
@@ -107,6 +110,9 @@
                 height: 100vh;
                 z-index: 1;
                 background: white;
+            }
+            .display-none-mob.mob-menu-part-hidden ul li a {
+                font-size: 1.5rem;
             }
             /*theme_01*/
             /*theme_1*/
@@ -163,13 +169,16 @@
                 padding: 1.3em 0em;
                 grid-gap: 1em 0;
                 flex-wrap: wrap;
+                justify-content: space-between;
             }
             .about-pillates .single-part-main {
-                width: 100% !important;
+                /* width: 100% !important; */
                 padding: 1.25em;
             }
             .about-pillates .subtitle-pillates {
                 color: var(--bs-success);
+                font-size: 1rem;
+                max-width: 100%;
             }
             .about-pillates .main-part {
                 padding: 0;
@@ -177,6 +186,9 @@
             .about-pillates .bg-image-part .mob-d-block img {
                 height: 100%;
                 border-radius: 1em;
+            }
+            .about-pillates .img-pillates {
+                margin-bottom: 1em;
             }
             /*theme_3*/
             /*theme_4*/
@@ -239,6 +251,9 @@
             .news-ticker-h li::after {
                 width: 0.9em;
                 height: 0.9em;
+            }
+            .pillates-shop-single .choose-sizes .filter-li-product .filter-checkbox label {
+                padding: 0 3.45em;
             }
             /*theme_5*/
             /*theme_6*/
@@ -465,9 +480,8 @@
                 padding: 0.5em 1em;
             }
             .product-main-text-part li::after {
-                left: 4%;
+                left: 6%;
             }
-            .product-main-text-part li,
             .product-text-info-part {
                 font-size: 1rem;
             }
@@ -477,6 +491,9 @@
             }
             .pillates-shop-single .single-part.height-part img {
                 height: auto;
+            }
+            .product-main-text-part li {
+                padding-left: 1.2em;
             }
             /*theme_14*/
             /*theme_15*/
@@ -513,6 +530,15 @@
                 padding: 2em 0;
             }
             /*theme_18*/
+            /*theme_19*/
+            .checkout-pilates .grid-gap-part .img-part {
+                display: block;
+                width: 17em;
+            }
+            .checkout-pilates .mb-mob-part {
+                margin-bottom: 0;
+            }
+            /*theme_19*/
             /*theme_20*/
             .checkout-pilates .first-part {
                 padding: 1.75em;
@@ -540,7 +566,10 @@
             transform: translate(-115%, -50%);
         } */
             .general-class-all label {
-                font-size: 1rem;
+                font-size: 1.2rem;
+            }
+            .checkout-pilates .packages-form-title {
+                margin-bottom: 1em;
             }
             /*theme_20*/
             /*theme_21*/

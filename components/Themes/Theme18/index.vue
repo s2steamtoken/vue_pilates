@@ -15,7 +15,7 @@ export default {
     <section class="my-account favourites-part-start">
         <div class="container">
             <div class="main-part">
-                <div class="row justify-content-between align-items-center mb-5 mob-justify-center" v-if="userData.isLogin">
+                <div class="row justify-content-center align-items-center mb-5 mob-justify-center" v-if="userData.isLogin">
                     <AccountSidebar></AccountSidebar>
                 </div>
                 <div class="row product">

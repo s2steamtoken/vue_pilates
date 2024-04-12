@@ -31,7 +31,7 @@ export default {
 <template v-if="apiData.orders != undefined">
   <sectiion class="my-account order-history">
         <div class="container">
-            <div class="row justify-content-between align-items-center mb-5 mob-justify-center">
+            <div class="row justify-content-center align-items-center mb-5 mob-justify-center">
                 <AccountSidebar></AccountSidebar>
             </div>
             <div v-if="apiData.orders.length == 0" class="text-center py-4">

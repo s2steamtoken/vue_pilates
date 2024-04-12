@@ -224,9 +224,9 @@
         display: flex !important;
         padding: 2em 2em 0 2em;
     }
-    .checkout-pilates .flex-direction-mob {
+    /* .checkout-pilates .flex-direction-mob {
         flex-direction: column-reverse;
-    }
+    } */
     /*theme_20*/
     /*theme_21*/
     .signin-signup .background-white-part {

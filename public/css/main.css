@@ -2874,6 +2874,11 @@ button {
     font-size: 1.25rem;
 }
 
+.my-account .my-account-title {
+    margin-bottom: 0.5em;
+    color: var(--bs-success) !important
+}
+
 
 /*theme_22*/
 
