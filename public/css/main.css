@@ -2495,6 +2495,15 @@ button {
     margin-left: 0.5em;
 }
 
+.checkout-pilates .empty-product-shop {
+    padding: 15em 0;
+    text-align: center;
+}
+
+.checkout-pilates .empty-product-shop .empty-checkout {
+    font-size: 3rem;
+}
+
 
 /*theme_19*/
 
@@ -3213,6 +3222,51 @@ button {
 
 
 /*theme_26*/
+
+
+/*theme_27*/
+
+.about-us-start .about-us-form {
+    background-color: white;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.about-us-start .about-us-form label {
+    font-size: 1rem;
+    color: gray;
+    margin-bottom: 0.5em;
+}
+
+.about-us-start .about-us-form .form-control {
+    background-color: transparent;
+}
+
+.about-us-start .about-us-form textarea {
+    width: 100%;
+    height: 100%;
+}
+
+.about-us-start .address-contact {
+    margin-bottom: 1em;
+    font-weight: 400;
+}
+
+.about-us-start .contact-info-icon {
+    width: 1.5rem;
+    margin-right: 1em;
+}
+
+.about-us-start .contact-info-text {
+    margin-bottom: 1em;
+}
+
+.about-us-start .contact-info-number .number {
+    color: gray;
+}
+
+
+/*theme_27*/
 
 
 /*general-class-all*/

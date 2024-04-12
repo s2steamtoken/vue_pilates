@@ -25,7 +25,7 @@ export default defineNuxtConfig({
                 { rel: 'stylesheet', type: 'text/css', href: '/css/main1440.css?13' },
                 { rel: 'stylesheet', type: 'text/css', href: '/css/main1024.css?13' },
                 { rel: 'stylesheet', type: 'text/css', href: '/css/main768.css?13' },
-                { rel: 'stylesheet', type: 'text/css', href: '/css/main500.css?13', },
+                { rel: 'stylesheet', type: 'text/css', href: '/css/main500.css?14', },
                 { rel: 'stylesheet', type: 'text/css', href: '/fontawesome/css/all.min.css', loading: "lazy" },
             ],
             meta: [

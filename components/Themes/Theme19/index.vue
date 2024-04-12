@@ -308,7 +308,7 @@ export default {
                                                     type="radio" :id="`payment_${payment_method.key}`" :value="payment_method.key" />
                                                 <span></span>
                                             </label>
-                                            <div class="d-flex align-items-center grid-gap-part">
+                                            <div class="d-flex align-items-center">
                                                 {{ payment_method.name }}
                                                 <nuxt-img :src="payment_method.icon" width="50" height="32" class="">
                                                 </nuxt-img>
@@ -332,25 +332,6 @@ export default {
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
-                    <!-- <div class="row align-items-center grid-gap-part mob-d-block">
-                        <div class="col-lg-3 col-md-4 col-sm-4 col-3">
-                            <div class="d-flex align-items-center grid-gap-back">
-                                <nuxt-link  :to="`/${globalData.langUrl}shop`" class="add-to-basket">
-                                    <nuxt-img src="/images/bag.svg" class="" width="24" height="24">
-                                    </nuxt-img>
-                                </nuxt-link>
-                                <nuxt-link  :to="`/${globalData.langUrl}`" class="back-link-part">
-                                    {{ translate('Back') }}
-                                </nuxt-link>
-                            </div>
-                        </div>
-                        <div class="col-auto">
-                            <nuxt-link  :to="`/${globalData.langUrl}`" class="img-part">
-                                <nuxt-img src="/images/logopilatesboutique.svg" width="259" height="93">
-                                </nuxt-img>
-                            </nuxt-link>
-                        </div>
-                    </div> -->
                     <div class="second-part" >
                         <div class="gift-card-content" v-if="cartData.list.length > 0" >
                             <div class="gift-card-row" v-for="item in cartData.list" :key="item.cart_id">
@@ -391,6 +372,40 @@ export default {
                         <div class="d-flex justify-content-between align-items-center">
                             <h5 class="price-title">{{ translate('Total') }}</h5>
                             <p class="price-text">{{ cartData.total }} {{ globalData.currency_title }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="checkout-pilates general-class-all" v-if="cartData.list.length == 0">
+        <div class="main-part">
+            <div class="row flex-direction-mob">    
+                <div class="col-lg-12 col-md-6">
+                    <div class="first-part">
+                        <div class="row align-items-center grid-gap-part">
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-3">
+                                <div class="d-flex align-items-center grid-gap-back">
+                                    <nuxt-link  :to="`/${globalData.langUrl}shop`" class="add-to-basket">
+                                        <nuxt-img src="/images/bag.svg" class="" width="24" height="24">
+                                        </nuxt-img>
+                                    </nuxt-link>
+                                    <nuxt-link  :to="`/${globalData.langUrl}`" class="back-link-part">
+                                        {{ translate('Back') }}
+                                    </nuxt-link>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <nuxt-link  :to="`/${globalData.langUrl}`" class="img-part">
+                                    <nuxt-img src="/images/logopilatesboutique.svg" width="259" height="93">
+                                    </nuxt-img>
+                                </nuxt-link>
+                            </div>
+                        </div>
+                        <div class="empty-product-shop">
+                            <div class="empty-text-part">
+                               <p class="empty-checkout">{{ translate('You did not add any product to your basket') }}</p>
+                            </div>
                         </div>
                     </div>
                 </div>

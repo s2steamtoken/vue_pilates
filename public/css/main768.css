@@ -272,6 +272,9 @@
         grid-gap: 1em 0;
     }
     /*theme_25*/
+    .about-us-start .btn-dark {
+        width: 100%;
+    }
     /*footer*/
     .footer-logo img {
         width: 20em;
@@ -288,7 +291,7 @@
     /*footer*/
     /*product*/
     .product .game-each-part .img-text-info .product_thumbnail_wrapper {
-        height: 31em;
+        height: 21em;
     }
     .product .add-to-wishlist.btn-add-product {
         left: 1em;

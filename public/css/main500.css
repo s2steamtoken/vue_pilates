@@ -565,9 +565,6 @@
             .checkout-pilates .grid-gap-part {
                 margin-bottom: 1em;
             }
-            /* .check-your-info input:checked~span:after {
-            transform: translate(-115%, -50%);
-        } */
             .general-class-all label {
                 font-size: 1.2rem;
             }
@@ -624,6 +621,14 @@
                 font-size: 5rem;
             }
             /*theme_26*/
+            /*theme_27*/
+            .about-us-start .flex-direction-reverse {
+                flex-direction: column-reverse;
+            }
+            .about-us-start .contact-info-div {
+                margin-bottom: 1em;
+            }
+            /*theme_27*/
             /*footer*/
             .footer {
                 padding: 1.5em 0;

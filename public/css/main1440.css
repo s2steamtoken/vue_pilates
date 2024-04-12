@@ -146,9 +146,6 @@
     .packages-for-offer .single-part-packages .info-part {
         top: 53%;
     }
-    .check-your-info input:checked~span:after {
-        transform: translate(-100%, -50%);
-    }
     /*theme_17*/
     /*theme_18*/
     .packages-form-start .first-part {
