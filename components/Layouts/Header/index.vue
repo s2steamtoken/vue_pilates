@@ -139,10 +139,10 @@ export default {
                                     </div>
                                 </div>
                                 <div class="">
-                                    <a href="tel:+374" class="btn-secondary">
+                                    <nuxt-link  :to="`/${globalData.langUrl}contact-us`" class="btn-secondary">
                                         <img width="21" height="21" src="/images/whatsapp.svg" alt="" class="">
                                         {{ translate('Contact') }}
-                                    </a>
+                                    </nuxt-link>
                                 </div>
                             </div>
                         </div>
