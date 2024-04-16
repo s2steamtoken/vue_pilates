@@ -124,7 +124,7 @@ export default {
     props: {
         content: {},
         apiData: {},
-        cartData: {},-
+        cartData: {},
         globalData: {},
     },
 };
