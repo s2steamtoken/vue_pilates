@@ -52,7 +52,7 @@ async function loginRun(e) {
 }
 
 .s2s_admin_login {
-    padding: 2em 0;
+    padding: 5em 0;
     position: relative;
 }
 
@@ -116,7 +116,7 @@ async function loginRun(e) {
 
 
 .s2s_admin_login .s2s-logo-part {
-    width: 12em;
+    width: 10em;
     margin-bottom: 2em;
     animation: bounce;
     animation-duration: 4s;
@@ -134,12 +134,12 @@ async function loginRun(e) {
 }
 
 .s2s_admin_login .s2s_admin_title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 600;
 }
 
 .s2s_admin_login label {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .s2s_admin_login .form-control {
@@ -149,7 +149,7 @@ async function loginRun(e) {
 .s2s_admin_login .btn-s2s-admin-login {
     background-color: #3c3d88;
     border-color: #3c3d88;
-    font-family: roboto, sans-serif;
+    font-family: "roboto", sans-serif;
     cursor: pointer;
     display: inline-block;
     font-size: 1.2rem;
@@ -198,7 +198,7 @@ async function loginRun(e) {
 
 .s2s_admin_login .about-s2s-title {
     color: #fff;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 600;
     text-align: center;
     margin-bottom: 2em;
@@ -218,32 +218,33 @@ async function loginRun(e) {
         transform: translateX(0);
     }
 }
-@-webkit-keyframes slideInRight {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(2000px);
-    transform: translateX(2000px);
-  }
 
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
+@-webkit-keyframes slideInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(2000px);
+        transform: translateX(2000px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
 }
 
 @keyframes slideInRight {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(2000px);
-    -ms-transform: translateX(2000px);
-    transform: translateX(2000px);
-  }
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(2000px);
+        -ms-transform: translateX(2000px);
+        transform: translateX(2000px);
+    }
 
-  100% {
-    -webkit-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
-  }
+    100% {
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+    }
 }
 
 .s2s_admin_login .description-s2s {
@@ -255,7 +256,16 @@ async function loginRun(e) {
     animation-duration: 2s;
 }
 
-
+.s2s_admin_container {
+    max-width: 105rem;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* 0.5);
+    padding-left: calc(var(--bs-gutter-x)* 0.5);
+    margin-right: auto;
+    margin-left: auto;
+}
 
 @media(max-width:1440px) {
     .s2s_admin_login .about-s2s {
@@ -264,6 +274,10 @@ async function loginRun(e) {
 
     .s2s_admin_login .about-s2s-title {
         margin-bottom: 1em;
+    }
+
+    .s2s_admin_container {
+        max-width: 86rem;
     }
 
 }
@@ -277,8 +291,9 @@ async function loginRun(e) {
         font-size: 2rem;
     }
 
-
-
+    .s2s_admin_container {
+        max-width: 63rem;
+    }
 }
 
 @media(max-width:768px) {
@@ -290,6 +305,10 @@ async function loginRun(e) {
         flex-direction: column-reverse;
         grid-gap: 2em 0;
     }
+
+    .s2s_admin_container {
+        max-width: 62rem;
+    }
 }
 
 @media(max-width:500px) {
@@ -300,7 +319,7 @@ async function loginRun(e) {
 </style>
 <template>
     <section class="s2s_admin_login">
-        <div class="container">
+        <div class="s2s_admin_container">
             <div class="row align-items-center flex-direction-media">
                 <div class="col-lg-5 col-md-6 col-sm-10 col-12 position-relative">
                     <div class="s2s-logo-part">
