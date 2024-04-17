@@ -11,7 +11,10 @@ export default defineNuxtConfig({
         },
     },
     runtimeConfig: {
-        apiBaseUrl: "",
+        // public: {
+            apiBaseUrl: process.env.NUXT_API_BASE_URL,
+            // apiBaseUrl: "",
+        // }
     },
     app: {
         head: {
