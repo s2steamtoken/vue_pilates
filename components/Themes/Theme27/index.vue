@@ -53,27 +53,27 @@ export default {
                     <form class="about-us-form" @submit="sendEmail" id="contact_subscribe_form">
                         <div class="form-group mt-4">
                             <label>{{ translate('Name') }}</label>
-                            <input v-model="formData.name" type="text" class="form-control bg-gray-input" name="name">
+                            <input v-model="formData.name" type="text" class="form-control bg-gray-input is-invalid" name="name">
                             <div class="invalid-feedback">{{ validateErrors.name }}</div>
                         </div>
                         <div class="form-group mt-4">
                             <label>{{ translate('Surname') }}</label>
-                            <input v-model="formData.name_2" type="text" class="form-control bg-gray-input" name="lastname">
+                            <input v-model="formData.name_2" type="text" class="form-control bg-gray-input is-invalid" name="lastname">
                             <div class="invalid-feedback">{{ validateErrors.name_2 }}</div>
                         </div>
                         <div class="form-group mt-4">
                             <label>{{ translate('E-mail') }}</label>
-                            <input v-model="formData.email" type="text" class="form-control bg-gray-input" name="email">
+                            <input v-model="formData.email" type="text" class="form-control bg-gray-input is-invalid" name="email">
                             <div class="invalid-feedback">{{ validateErrors.email }}</div>
                         </div>
                         <div class="form-group mt-4">
                             <label>{{ translate('Phone') }}</label>
-                            <input v-model="formData.phone" type="text" class="form-control bg-gray-input" name="phone">
+                            <input v-model="formData.phone" type="text" class="form-control bg-gray-input is-invalid" name="phone">
                             <div class="invalid-feedback">{{ validateErrors.phone }}</div>
                         </div>
                         <div class="form-group mt-4">
                             <label>{{ translate('Type Your Message') }}</label>
-                            <textarea v-model="formData.comment"  class="form-control bg-gray-input" rows="3" placeholder="Type..."
+                            <textarea v-model="formData.comment"  class="form-control bg-gray-input is-invalid" rows="3" placeholder="Type..."
                                 name="message"></textarea>
                                 <div class="invalid-feedback">{{ validateErrors.comment }}</div>
                         </div>

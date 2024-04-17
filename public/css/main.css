@@ -3240,6 +3240,9 @@ button {
 
 .about-us-start .about-us-form .form-control {
     background-color: transparent;
+    border: 0.0625em solid var(--bs-gray);
+    background: transparent;
+    padding: 1em;
 }
 
 .about-us-start .about-us-form textarea {
@@ -3248,7 +3251,7 @@ button {
 }
 
 .about-us-start .address-contact {
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
     font-weight: 400;
 }
 
@@ -3258,7 +3261,7 @@ button {
 }
 
 .about-us-start .contact-info-text {
-    margin-bottom: 1em;
+    margin-bottom: 2em;
 }
 
 .about-us-start .contact-info-number .number {
@@ -3267,6 +3270,7 @@ button {
 
 .about-us-start .contact-info-number {
     margin-right: 0.5em;
+    font-size: 1.5rem;
 }
 
 
