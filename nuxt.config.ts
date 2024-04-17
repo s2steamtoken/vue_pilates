@@ -20,12 +20,12 @@ export default defineNuxtConfig({
             link: [
                 // { rel: 'icon', type: 'image/x-icon', href: '/logoIcon.svg' },
                 { rel: 'stylesheet', type: 'text/css', href: '/lib/bootstrap/css/bootstrap.css?5' },
-                { rel: 'stylesheet', type: 'text/css', href: '/css/font.css?2' },
-                { rel: 'stylesheet', type: 'text/css', href: '/css/main.css?13' },
-                { rel: 'stylesheet', type: 'text/css', href: '/css/main1440.css?13' },
-                { rel: 'stylesheet', type: 'text/css', href: '/css/main1024.css?13' },
-                { rel: 'stylesheet', type: 'text/css', href: '/css/main768.css?13' },
-                { rel: 'stylesheet', type: 'text/css', href: '/css/main500.css?14', },
+                { rel: 'stylesheet', type: 'text/css', href: '/css/font.css?3' },
+                { rel: 'stylesheet', type: 'text/css', href: '/css/main.css?14' },
+                { rel: 'stylesheet', type: 'text/css', href: '/css/main1440.css?14' },
+                { rel: 'stylesheet', type: 'text/css', href: '/css/main1024.css?14' },
+                { rel: 'stylesheet', type: 'text/css', href: '/css/main768.css?14' },
+                { rel: 'stylesheet', type: 'text/css', href: '/css/main500.css?15', },
                 { rel: 'stylesheet', type: 'text/css', href: '/fontawesome/css/all.min.css', loading: "lazy" },
             ],
             meta: [
