@@ -24,7 +24,7 @@ export default defineNuxtConfig({
                 // { rel: 'icon', type: 'image/x-icon', href: '/logoIcon.svg' },
                 { rel: 'stylesheet', type: 'text/css', href: '/lib/bootstrap/css/bootstrap.css?6' },
                 { rel: 'stylesheet', type: 'text/css', href: '/css/font.css?5' },
-                { rel: 'stylesheet', type: 'text/css', href: '/css/main.css?16' },
+                { rel: 'stylesheet', type: 'text/css', href: '/css/main.css?17' },
                 { rel: 'stylesheet', type: 'text/css', href: '/css/main1440.css?16' },
                 { rel: 'stylesheet', type: 'text/css', href: '/css/main1024.css?16' },
                 { rel: 'stylesheet', type: 'text/css', href: '/css/main768.css?16' },
