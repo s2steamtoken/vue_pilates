@@ -80,6 +80,7 @@ async function passwordRun() {
 
 
 <template>
+ 
      <section class="packages-for-offer">
         <div class="container">
             <div class="main-part">
@@ -95,7 +96,7 @@ async function passwordRun() {
                             <div class="padding-part">
                                 <div class="d-flex justify-content-center">
                                     <nuxt-link :to="`/${item.url}`" class="btn-select">
-                                        {{ item.id == apiData.package.id ? translate('Selected Package') : translate('Selected Package') }}
+                                        {{ (apiData.package != undefined && item.id == apiData.package.id) ? translate('Selected Package') : translate('Select package') }}
                                     </nuxt-link>
                                 </div>
                                 <div class="info-part">

@@ -85,7 +85,7 @@ export default {
 </script>
 
 <template>
-     <section class="packages-form-start general-class-all">
+     <section class="packages-form-start general-class-all"  v-if="apiData.package != undefined" >
         <div class="main-part">
             <div class="row max-width-mob">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-12">

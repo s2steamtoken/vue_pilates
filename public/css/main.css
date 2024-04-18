@@ -164,6 +164,13 @@ button {
     border-top: 0.06em solid var( --bs-gray);
     border-bottom: 0.06em solid var( --bs-gray);
     margin: 2em 0;
+    z-index: 1000;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: transparent !important;
+    font-weight: 700 !important;
 }
 
 .header.header-position-absolute {
@@ -2373,6 +2380,10 @@ button {
 
 
 /*theme_17*/
+
+.packages-for-offer {
+    margin-bottom: 8em;
+}
 
 .packages-for-offer .single-part-packages {
     position: relative;
