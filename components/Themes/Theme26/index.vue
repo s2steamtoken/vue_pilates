@@ -94,13 +94,13 @@ export default {
                 <div class="signin-main-part">
                     <div class="d-flex align-items-center grid-gap-link-text">
                         <nuxt-link :to="`/${globalData.langUrl}`" class="add-to-basket">
-                            <nuxt-img src="/images/bag.svg" class="" width="24" height="24"></nuxt-img>
+                            <img src="/images/bag.svg" class="" width="24" height="24">
                         </nuxt-link>
                         <nuxt-link :to="`/${globalData.langUrl}`" class="back-link">
                             {{ translate('Back') }}
                         </nuxt-link>
                         <nuxt-link class="img-part" :to="`/${globalData.langUrl}`">
-                            <nuxt-img src="/images/logopilatesboutique.svg" width="259" height="93"></nuxt-img>
+                            <img src="/images/logopilatesboutique.svg" width="259" height="93">
                         </nuxt-link>
                     </div>
                     <h2 class="signin-title" v-if="step == 1">{{ translate('Forgot your password?') }}</h2>
