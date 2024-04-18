@@ -12,10 +12,13 @@
         width: 8.6em;
     }
     .header .main-header nav ul li a {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     .added-products-ul {
         height: 22em;
+    }
+    .header.header-position-absolute .main-header {
+        border-radius: 2.75em;
     }
     /*theme_01*/
     /*theme_2*/

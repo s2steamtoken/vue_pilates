@@ -12,6 +12,9 @@
     .added-products-ul {
         height: 24em;
     }
+    .header.header-position-absolute .main-header {
+        padding: 1em 1em;
+    }
     /*header*/
     /*product*/
     .product .game-each-part .img-text-info .product_thumbnail_wrapper {
