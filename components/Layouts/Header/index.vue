@@ -70,8 +70,8 @@ export default {
 </script>
 
 <template>
-    <div>
-        <header :class="`header  ${globalData.fixed_menu ? 'header-position-absolute ' : 'position-sticky top-0 start-0'} `">
+    <div :class="`${globalData.fixed_menu ? '' : 'position-sticky top-0 start-0'} `">
+        <header :class="`header  ${globalData.fixed_menu ? 'header-position-absolute ' : ''} `">
            <div class="container">
                <div class="main-header">
                    <div class="row justify-content-between align-items-center gx-0">
