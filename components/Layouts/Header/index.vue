@@ -73,7 +73,7 @@ export default {
     <div>
 
         <!-- {{ isMenuActive }} -->
-    <header :class="`header  ${globalData.fixed_menu ? 'header-position-absolute' : ''} `">
+        <header :class="`header  ${globalData.fixed_menu ? 'header-position-absolute' : ''} `">
             <div class="container">
                 <div class="main-header">
                     <div class="row justify-content-between align-items-center gx-0">
@@ -99,6 +99,25 @@ export default {
                         </div>
                         <div class="col-auto mob-d-none">
                             <div class="d-flex align-items-center grid-gap-menu">
+                                <div class="pop-up">
+                                    <div class="dropdown languages">
+                                        <div class="dropdown languages-menu"><button class="btn dropdown-toggle"
+                                                type="button" data-bs-toggle="dropdown" id="dropdownMenuButton"
+                                                aria-expanded="false"> {{ globalData.site_lang
+                                                }}</button>
+                                            <ul class="dropdown-menu" style="">
+                                                <template v-for="(url, lang) in globalData.lang_urls">
+                                                    <li v-if="lang != globalData.site_lang" class="language">
+                                                        <nuxt-link :to="`/${url}`"
+                                                            class="row-start lang-change-link dropdown-item">
+                                                            {{ lang }}
+                                                        </nuxt-link>
+                                                    </li>
+                                                </template>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="pop-up">
                                     <div class="dropdown languages-menu">
                                         <nuxt-link
@@ -131,15 +150,16 @@ export default {
                                         </nuxt-link>
                                         <div class="count-added-products"
                                             :style="`opacity: ${(wishlistData.count != undefined && wishlistData.count > 0) ? '1' : '0'}`">
-                                            <span :style="`display: ${(wishlistData.count != undefined && wishlistData.count > 0) ? 'block' : 'none'}`" 
+                                            <span
+                                                :style="`display: ${(wishlistData.count != undefined && wishlistData.count > 0) ? 'block' : 'none'}`"
                                                 class="wishlist-count count-badge fs-11 bold">
-                                                    {{ (wishlistData.count != undefined) ? wishlistData.count : 0 }}
+                                                {{ (wishlistData.count != undefined) ? wishlistData.count : 0 }}
                                             </span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="">
-                                    <nuxt-link  :to="`/${globalData.langUrl}contact-us`" class="btn-secondary">
+                                    <nuxt-link :to="`/${globalData.langUrl}contact-us`" class="btn-secondary">
                                         <img width="21" height="21" src="/images/whatsapp.svg" alt="" class="">
                                         {{ translate('Contact') }}
                                     </nuxt-link>
@@ -147,7 +167,28 @@ export default {
                             </div>
                         </div>
                         <div class="col-auto display-none-desktop">
-                            <button @click="openMenu" type="button" class="display-none-desktop mob-menu-button open-menu-btn">
+                            <div class="pop-up">
+                                <div class="dropdown languages">
+                                    <div class="dropdown languages-menu"><button class="btn dropdown-toggle"
+                                            type="button" data-bs-toggle="dropdown" id="dropdownMenuButton"
+                                            aria-expanded="false"> {{
+                                                globalData.site_lang
+                                            }}</button>
+                                        <ul class="dropdown-menu" style="">
+                                            <template v-for="(url, lang) in globalData.lang_urls">
+                                                <li v-if="lang != globalData.site_lang" class="language">
+                                                    <nuxt-link :to="`/${url}`"
+                                                        class="row-start lang-change-link dropdown-item">
+                                                        {{ lang }}
+                                                    </nuxt-link>
+                                                </li>
+                                            </template>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <button @click="openMenu" type="button"
+                                class="display-none-desktop mob-menu-button open-menu-btn">
                                 <img src="/images/mob-menu.svg" class="" alt="" width="16" height="16">
                             </button>
                         </div>
@@ -164,11 +205,11 @@ export default {
                                 {{ translate('Products') }}
                             </h2>
                             <button type="button" class="close remove-popup" data-bs-dismiss="modal" aria-label="Close">
-                                <img width="24" height="24" src="/images/x.svg" class="attachment-thumbnail size-thumbnail"
-                                    alt="">
+                                <img width="24" height="24" src="/images/x.svg"
+                                    class="attachment-thumbnail size-thumbnail" alt="">
                             </button>
                         </div>
-                        <CartModal :cartData="cartData" >
+                        <CartModal :cartData="cartData">
                         </CartModal>
                     </div>
                 </div>
@@ -201,7 +242,7 @@ export default {
                     </div>
                 </div>
                 <div class="col-auto display-none-desktop">
-                    <button  @click="openMenu" type="button" class="display-none-desktop mob-menu-button open-menu-btn">
+                    <button @click="openMenu" type="button" class="display-none-desktop mob-menu-button open-menu-btn">
                         <img src="/images/x.svg" class="" alt="" width="16" height="16">
                     </button>
                 </div>
@@ -215,6 +256,6 @@ export default {
                     </li>
                 </template>
             </ul>
-        </nav> 
+        </nav>
     </div>
 </template>

@@ -28,6 +28,10 @@
             .header.header-position-absolute~.display-none-mob.mob-menu-part-hidden.opened {
                 padding: 3em 1.5em;
             }
+            .header .dropdown-toggle {
+                width: 2.5em !important;
+                height: 2.5em !important;
+            }
             .display-none-mob.mob-menu-part-hidden.opened {
                 padding: 2em 0.8em !important;
             }
@@ -93,8 +97,8 @@
                 width: 7em;
             }
             .mob-menu-button {
-                width: 2em;
-                height: 2em;
+                width: 2.5em;
+                height: 2.5em;
             }
             .mob-menu-button img {
                 width: 1rem;
@@ -416,6 +420,7 @@
             }
             .regulation-start-part .img-part {
                 min-width: 4.5em;
+                width: 4.5em;
             }
             .regulation-start-part .regulation-list-number {
                 font-size: 1rem;

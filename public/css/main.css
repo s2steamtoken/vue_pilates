@@ -227,6 +227,12 @@ button {
     display: none;
 }
 
+.header .lang-change-link {
+    text-transform: capitalize;
+    text-align: center;
+    padding: 0;
+}
+
 .header .dropdown-toggle {
     background-color: var(--bs-white) !important;
     border-radius: 3.375em !important;
@@ -234,10 +240,40 @@ button {
     width: 3em !important;
     height: 3em !important;
     transition: all 0.3s;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    background-color: #b2937e !important;
 }
 
 .header .dropdown-toggle:hover {
     background-color: var(--bs--brown) !important;
+}
+
+.header .languages .dropdown-toggle.show {
+    border-radius: 3.375em 3.375em 0 0 !important;
+    border-bottom: 0;
+}
+
+.header .languages .dropdown-menu.show {
+    min-width: 100%;
+    background: #ffffff;
+    border: 0;
+    transition: all 0.6s ease;
+    top: 99% !important;
+    right: 0% !important;
+    left: unset !important;
+    bottom: unset !important;
+    transform: translate(0) !important;
+    box-shadow: 0 4px 2px -2px var(--bs-gray) !important;
+    border: 1px solid gray;
+    border-radius: 0 0 3.375em 3.375em !important;
+    padding-bottom: 0.9em;
 }
 
 .header .dropdown-toggle img {
@@ -1677,6 +1713,7 @@ button {
 
 .regulation-start-part .img-part {
     min-width: 8.25em;
+    width: 8.25em;
 }
 
 .regulation-start-part .img-part .img-div {

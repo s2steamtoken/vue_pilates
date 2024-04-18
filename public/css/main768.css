@@ -11,6 +11,11 @@
     .display-none-desktop {
         display: block;
     }
+    .header .display-none-desktop {
+        display: flex !important;
+        align-items: center;
+        grid-gap: 1em;
+    }
     .display-none-mob {
         display: none !important;
     }

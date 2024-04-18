@@ -59,7 +59,7 @@ export default {
                     </div>
                     <div class="pop-up">
                         <div class="dropdown languages-menu count-part">
-                            <nuxt-link  :to="`/${globalData.langUrl}checkout`" class="btn dropdown-toggle" >
+                            <nuxt-link :to="`/${globalData.langUrl}checkout`" class="btn dropdown-toggle">
                                 <img width="18" height="18" src="/images/bag.svg?1" alt="" class="">
                             </nuxt-link>
                             <div class="count-added-products"
