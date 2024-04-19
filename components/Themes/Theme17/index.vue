@@ -21,10 +21,28 @@ const checkout = ref({
     lastname: '',
     email: '',
     phone: '',
-    count_id: 0,
+    count_id: "",
     package_id: props.apiData.package.id,
     payment_method: 'card'
 });
+
+const selectedPrice = ref(0)
+for(let i in props.content.package_prices){
+    let price_el = toRaw(props.content.package_prices[i]);
+    selectedPrice.value = price_el.price;
+    checkout.value.count_id = price_el.id;
+    break;
+}
+
+function selectPrice(){
+    for(let i in props.content.package_prices){
+        let price_el = toRaw(props.content.package_prices[i]);
+        console.log(price_el);
+        if(price_el.id == checkout.value.count_id){
+            selectedPrice.value = price_el.price;
+        }
+    }
+}
 
 async function orderRun(e) {
 
@@ -128,8 +146,8 @@ export default {
                                 </div>
                                 <div class="col-lg-12 mb-4">
                                     <div class="your-opinion-inputs">
-                                        <select :class="`form-control bg-gray-input ${validateErrors.count_id != undefined ? 'is-invalid' : ''}`" >
-                                            <option v-for="item in content.package_prices" :value="item.id">{{ item.prices_name }}</option>
+                                        <select @change="selectPrice" v-model="checkout.count_id" :class="`form-control bg-gray-input ${validateErrors.count_id != undefined ? 'is-invalid' : ''}`" >
+                                            <option v-for="item in content.package_prices" :value="item.id">{{ item.name }} ({{ item.price }}{{ globalData.currency }})</option>
                                         </select>
                                     </div>
                                 </div>
@@ -181,7 +199,10 @@ export default {
                                             </nuxt-link>
                                         </div>
                                         <div class="info-part">
-                                            <h3 class="packages-part-text">{{ globalData.currency }} {{ apiData.package.price}} / {{ translate('year') }}  </h3>
+                                            <h3 class="packages-part-text">{{ globalData.currency }} 
+                                                {{ selectedPrice }} 
+                                                
+                                                / {{ translate('year') }}  </h3>
                                             <div class="bg-color-info">
                                                 <div class="d-flex justify-content-center">
                                                     <div class="img-part">
