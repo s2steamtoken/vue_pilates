@@ -21,6 +21,7 @@ const checkout = ref({
     lastname: '',
     email: '',
     phone: '',
+    count_id: 0,
     package_id: props.apiData.package.id,
     payment_method: 'card'
 });
@@ -123,6 +124,13 @@ export default {
                                         :class="`form-control bg-gray-input  ${validateErrors.phone != undefined ? 'is-invalid' : ''}`"
                                         placeholder="Phone number (required for shipping updates)">
                                         <div class="invalid-feedback">{{ validateErrors.phone }}</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 mb-4">
+                                    <div class="your-opinion-inputs">
+                                        <select :class="`form-control bg-gray-input ${validateErrors.count_id != undefined ? 'is-invalid' : ''}`" >
+                                            <option v-for="item in content.package_prices" :value="item.id">{{ item.prices_name }}</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
