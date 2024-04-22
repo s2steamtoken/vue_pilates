@@ -220,8 +220,7 @@ export default {
                                         <div class="info-part">
                                             <h3 class="packages-part-text">{{ globalData.currency }} 
                                                 {{ selectedPrice }} 
-                                                
-                                                / {{ translate('year') }}  </h3>
+                                             </h3>
                                             <div class="bg-color-info">
                                                 <div class="d-flex justify-content-center">
                                                     <div class="img-part">

@@ -41,7 +41,7 @@ export default {
                                 <h3 class="packages-part-text shown">{{ item.name }}</h3>
                             </div>
                             <div class="backofcard">
-                                <h3 class="packages-part-text hidden"> {{ globalData.currency }} {{ item.price }} / {{ translate('year') }}</h3>
+                                <!-- <h3 class="packages-part-text hidden"> {{ globalData.currency }} {{ item.price }} / {{ translate('year') }}</h3> -->
                                 <nuxt-img :src="item.hover_image" width="517" height="476" class="hidden hidden-img"></nuxt-img>
                                 <div class="info-part">
                                     <div class="d-flex align-items-baseline">
