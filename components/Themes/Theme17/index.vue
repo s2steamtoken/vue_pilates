@@ -210,7 +210,7 @@ export default {
                         </div>
                         <div class="row justify-content-center packages-for-offer">
                             <div class="col-lg-8 col-md-11 col-sm-8 col-11">
-                                <div class="single-part-packages bg-dark-after">
+                                <div class="single-part-packages bg-dark-after" :style="`background-image:url(${apiData.package.image})`">
                                     <div class="padding-part">
                                         <div class="d-flex justify-content-center">
                                             <nuxt-link :to="`/${ apiData.package.url}`" class="btn-select">

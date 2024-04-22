@@ -92,7 +92,7 @@ async function passwordRun() {
                 </p>
                 <div class="row justify-content-between grid-gap-mob">
                     <div class="col-lg-4 col-md-6 col-sm-8 col-12"  v-for="item in content.packages">
-                        <div class="single-part-packages bg-dark-after">
+                        <div class="single-part-packages bg-dark-after"  :style="`background-image:url(${item.image})`">
                             <div class="padding-part">
                                 <div class="d-flex justify-content-center">
                                     <nuxt-link :to="`/${item.url}`" class="btn-select">
