@@ -144,13 +144,13 @@ export default {
                                         <div class="invalid-feedback">{{ validateErrors.phone }}</div>
                                     </div>
                                 </div>
-                                <div class="col-lg-12 mb-4">
+                                <!-- <div class="col-lg-12 mb-4">
                                     <div class="your-opinion-inputs">
                                         <select @change="selectPrice" v-model="checkout.count_id" :class="`form-control bg-gray-input ${validateErrors.count_id != undefined ? 'is-invalid' : ''}`" >
                                             <option v-for="item in content.package_prices" :value="item.id">{{ item.name }} ({{ item.price }}{{ globalData.currency }})</option>
                                         </select>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                             <h5 class="packages-form-title">{{ translate('Payment details') }}</h5>
                             <div class="row  mb-4">
@@ -188,6 +188,25 @@ export default {
                     <div class="second-part">
                         <div class="logo-image-part">
                             <nuxt-img src="/images/logoboutiqe.svg" width="295" height="106" alt="" class="boutique-logo"></nuxt-img>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="your-opinion-inputs">
+                                <!-- <select @change="selectPrice" v-model="checkout.count_id" :class="`form-control bg-gray-input ${validateErrors.count_id != undefined ? 'is-invalid' : ''}`" >
+                                    <option v-for="item in content.package_prices" :value="item.id">{{ item.name }} ({{ item.price }}{{ globalData.currency }})</option>
+                                </select> -->
+                                <ul>
+                                    <li class="category checkbox" v-for="item in content.package_prices">
+                                        <div class="filter-checkbox check-your-info-sort">
+                                            <input :id="item.id" type="radio"
+                                            class="category-filter" :value="item.id" :name="`item_${item.id}`" 
+                                            v-model="checkout.count_id" @change="selectPrice">
+                                            <label :for="item.id">
+                                                {{ item.name }} ({{ item.price }}{{ globalData.currency }})
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="row justify-content-center packages-for-offer">
                             <div class="col-lg-8 col-md-11 col-sm-8 col-11">

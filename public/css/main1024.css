@@ -253,6 +253,12 @@
         grid-gap: 1em 0;
         justify-content: center !important;
     }
+    .packages-form-start .your-opinion-inputs ul {
+        grid-gap: 0 0.5em;
+    }
+    .packages-form-start .your-opinion-inputs li label {
+        font-size: 1rem;
+    }
     /*theme_18*/
     /*theme_20*/
     .checkout-pilates .first-part {

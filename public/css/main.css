@@ -2537,6 +2537,35 @@ button {
     margin-bottom: 3.75em;
 }
 
+.packages-form-start .your-opinion-inputs {
+    display: flex;
+    justify-content: center;
+}
+
+.packages-form-start .your-opinion-inputs ul {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    justify-content: center;
+    grid-gap: 0em 1em;
+    padding-left: 0;
+}
+
+.packages-form-start .your-opinion-inputs li {
+    list-style: none;
+}
+
+.packages-form-start .your-opinion-inputs li label {
+    background: #f8efe7;
+    padding: 0.7em;
+    border-radius: 0.5em;
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in;
+}
+
+.packages-form-start .your-opinion-inputs :checked+label {
+    border: 1px solid black;
+}
+
 
 /*theme_18*/
 

@@ -216,23 +216,9 @@
     /*theme_17*/
     /*theme_17*/
     /*theme_18*/
-    /* .packages-for-offer {
-    padding: 1em 0;
-} */
-    /* .packages-for-offer .main-img {
-    object-fit: cover;
-}
-
-.packages-for-offer .bg-dark-part {
-    height: 100%;
-    top: 0%;
-    width: 95.9%;
-    left: 2%;
-}
-
-.packages-form-start .second-part {
-    padding: 11em 0;
-} */
+    .packages-form-start .your-opinion-inputs {
+        justify-content: center;
+    }
     /*theme_18*/
     /*theme_20*/
     .checkout-pilates .second-part {
