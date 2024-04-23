@@ -2537,7 +2537,7 @@ button {
     margin-bottom: 3.75em;
 }
 
-.packages-form-start .your-opinion-inputs {
+.packages-form-start .your-opinion-inputs.prices-packages {
     display: flex;
     justify-content: center;
 }

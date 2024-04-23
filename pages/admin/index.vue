@@ -1,8 +1,8 @@
 <script setup>
 
+const config = useRuntimeConfig();
 const { $sendApi } = useNuxtApp()
 const $store = useNuxtApp()
-const config = useRuntimeConfig();
 const globalData = inject('globalData')
 const Swal = inject('$swal')
 
@@ -16,13 +16,8 @@ const validateErrors = ref({});
 const router = useRouter()
 
 async function loginRun(e) {
-
+    
     e.preventDefault()
-
-    console.log(config);
-
-    // alert(config.apiBaseUrl);
-    return;
 
     let loginData = await $sendApi(`/api/login/admin`, login.value);
 
@@ -30,22 +25,16 @@ async function loginRun(e) {
         validateErrors.value = loginData.errors;
     }
     else {
+        console.log(loginData);
         $store.sessionUpdate({ token: loginData.token })
-        location.replace("https://pilates-admin.s2s.am/login/run?username=" + login.value.username + "&password=" + login.value.password)
+        location.replace(config.public.apiBaseUrl + "login/run?username=" + login.value.username + "&password=" + login.value.password)
     }
 
 }
 
 
 </script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-</link>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-</link>
-<link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet">
-</link>
+
 <style>
 * {
     font-family: "Poppins", sans-serif;
@@ -134,25 +123,49 @@ async function loginRun(e) {
 }
 
 .s2s_admin_login .s2s_admin_title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
 .s2s_admin_login label {
-    font-size: 1.2rem;
+    font-weight: 500;
+    font-size: 1rem;
 }
 
 .s2s_admin_login .form-control {
-    padding: 1em;
+
+    min-height: 40px !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 0 !important;
+    border-bottom: 1px solid #e7e7e7 !important;
+    padding: 10px 30px 10px 0 !important;
+    color: #111 !important;
+    
+    display: block !important;
+    width: 100% !important;
+    height: calc(2.25rem + 2px) !important;
+    padding: 0.375rem 0.75rem !important;
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+    color: #495057;
+    background-color: #fff !important;
+    background-clip: padding-box !important;
+    border: 1px solid #ced4da !important;
+    border-radius: 0.25rem !important;
+    -webkit-transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out !important;
+    transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out !important;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out !important;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out !important;
+
 }
 
 .s2s_admin_login .btn-s2s-admin-login {
     background-color: #3c3d88;
     border-color: #3c3d88;
-    font-family: "roboto", sans-serif;
     cursor: pointer;
     display: inline-block;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 500;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -160,7 +173,7 @@ async function loginRun(e) {
     border: 0;
     color: #fff;
     border-radius: 0.25em;
-    padding: 1em;
+    padding: .8em 1em;
     margin-bottom: 0.625em;
     width: 100%;
     -webkit-transition: all .3s ease-in-out;
@@ -170,7 +183,6 @@ async function loginRun(e) {
 }
 
 .s2s_admin_login .about-s2s {
-    background-image: url(https://pilates-admin.s2s.am/public_admin/img/s2sadminimg.svg);
     width: 100%;
     /* height: 63em; */
     background-size: cover;
@@ -250,10 +262,12 @@ async function loginRun(e) {
 .s2s_admin_login .description-s2s {
     color: #fff;
     font-style: italic;
-    font-size: 1.7rem;
     -webkit-animation-name: slideInLeft;
     animation-name: slideInRight;
     animation-duration: 2s;
+    font-size: 1.2rem;
+    font-style: italic;
+    line-height: 1.6;
 }
 
 .s2s_admin_container {
@@ -319,11 +333,14 @@ async function loginRun(e) {
 </style>
 <template>
     <section class="s2s_admin_login">
+        <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+        <link rel="preconnect" href="https://fonts.gstatic.com"></link>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"></link>
         <div class="s2s_admin_container">
             <div class="row align-items-center flex-direction-media">
-                <div class="col-lg-5 col-md-6 col-sm-10 col-12 position-relative">
+                <div class="col-lg-4 offset-1 col-md-6 col-sm-10 col-12 position-relative">
                     <div class="s2s-logo-part">
-                        <img src="https://pilates-admin.s2s.am/public_admin/img/logo.svg">
+                        <img :src="`${config.public.apiBaseUrl}public_admin/img/logo.svg`">
                     </div>
                     <div class="bg-white-admin">
                         <div class="title-part">
@@ -341,13 +358,13 @@ async function loginRun(e) {
                                 <input type="password" class="form-control" v-model="login.password" placeholder="">
                             </div>
                             <button type="submit" class="btn-s2s-admin-login">
-                                LOG IN
+                                Log In
                             </button>
                         </form>
                     </div>
                 </div>
                 <div class="col-lg-7 col-md-6 col-sm-10 col-12 position-relative">
-                    <div class="about-s2s">
+                    <div class="about-s2s" :style="`background-image: url(${config.public.apiBaseUrl}public_admin/img/s2sadminimg.svg)`">
                         <div class="about-s2s-title-part">
                             <h2 class="about-s2s-title">Welcome to S2S System</h2>
                         </div>

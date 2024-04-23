@@ -48,18 +48,18 @@ async function orderRun(e) {
 
     e.preventDefault();
 
-    let orderData = await $sendApi(`/api/forms/packages_buy`, checkout.value);
+    let result = await $sendApi(`/api/forms/packages_buy`, checkout.value);
 
-    if (orderData.status == 500) {
-        if (orderData.errors != undefined) {
-            validateErrors.value = orderData.errors;
+    if (result.status == 500) {
+        if (result.errors != undefined) {
+            validateErrors.value = result.errors;
         }
 
-        if (orderData.message != undefined && orderData.message != "") {
+        if (result.message != undefined && result.message != "") {
 
             Swal.fire({
-                title: (orderData.title != undefined && orderData.title != "") ? orderData.title : "",
-                text: orderData.message,
+                title: (result.title != undefined && result.title != "") ? result.title : "",
+                text: result.message,
                 icon: 'error',
                 confirmButtonText: 'OK'
             });
@@ -70,23 +70,23 @@ async function orderRun(e) {
 
         validateErrors.value = {}
 
-        if (orderData.url != undefined && orderData.url != "") {
-            location.replace(orderData.url);
+        if (result.url != undefined && result.url != "") {
+            location.replace(result.url);
         }
         else {
 
-            Swal.fire({
-                title: "Գրանցվել",
-                text: 'dsfh',
-                icon: 'error',
-                confirmButtonText: 'OK'
-            });
+            if(result.redirect_url != undefined){
+                location.replace(result.redirect_url);
+            }
+            else {
+                Swal.fire({
+                    title: translate('Հաջողությամբ գրանցված է'),
+                    text: translate('Ձեր պատվերը հաջողությամբ գրանցված է'),
+                    icon: 'success',
+                    confirmButtonText: 'OK'
+                });
+            }
 
-            // router.push({
-            //     path: '/my-orders',
-            // });
-            // order_id.value = orderData.order_id
-            // openModal('orderPlaced')
         }
     }
 
@@ -190,10 +190,7 @@ export default {
                             <nuxt-img src="/images/logoboutiqe.svg" width="295" height="106" alt="" class="boutique-logo"></nuxt-img>
                         </div>
                         <div class="col-lg-12">
-                            <div class="your-opinion-inputs">
-                                <!-- <select @change="selectPrice" v-model="checkout.count_id" :class="`form-control bg-gray-input ${validateErrors.count_id != undefined ? 'is-invalid' : ''}`" >
-                                    <option v-for="item in content.package_prices" :value="item.id">{{ item.name }} ({{ item.price }}{{ globalData.currency }})</option>
-                                </select> -->
+                            <div class="your-opinion-inputs prices-packages">
                                 <ul>
                                     <li class="category checkbox" v-for="item in content.package_prices">
                                         <div class="filter-checkbox check-your-info-sort">
