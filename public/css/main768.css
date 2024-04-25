@@ -263,6 +263,12 @@
         grid-gap: 1em 0;
     }
     /*theme_25*/
+    /*theme_28*/
+    .payment-success .fa-check:before,
+    .payment-failed .fa-times:before {
+        font-size: 15rem;
+    }
+    /*theme_28*/
     .about-us-start .btn-dark {
         width: 100%;
     }

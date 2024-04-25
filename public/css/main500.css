@@ -634,6 +634,12 @@
                 margin-bottom: 1em;
             }
             /*theme_27*/
+            /*theme_28*/
+            .payment-success .fa-check:before,
+            .payment-failed .fa-times:before {
+                font-size: 10rem;
+            }
+            /*theme_28*/
             /*footer*/
             .footer {
                 padding: 1.5em 0;

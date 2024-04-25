@@ -32,6 +32,8 @@ import Theme24 from "~~/components/Themes/Theme24/index.vue";
 import Theme25 from "~~/components/Themes/Theme25/index.vue";
 import Theme26 from "~~/components/Themes/Theme26/index.vue";
 import Theme27 from "~~/components/Themes/Theme27/index.vue";
+import Theme28 from "~~/components/Themes/Theme28/index.vue";
+import Theme29 from "~~/components/Themes/Theme29/index.vue";
 
 // THEMES END
 
@@ -357,7 +359,7 @@ watch(
 <script>
 
 const Themes = {
-    Theme1, Theme2, Theme3, Theme4, Theme5, Theme6, Theme7, Theme8, Theme9,Theme10,Theme11, Theme12, Theme13, Theme14, Theme15, Theme16, Theme17, Theme18, Theme19, Theme20, Theme21,Theme23,Theme24, Theme25, Theme26 ,Theme27
+    Theme1, Theme2, Theme3, Theme4, Theme5, Theme6, Theme7, Theme8, Theme9,Theme10,Theme11, Theme12, Theme13, Theme14, Theme15, Theme16, Theme17, Theme18, Theme19, Theme20, Theme21,Theme23,Theme24, Theme25, Theme26 ,Theme27,Theme28,Theme29
 }
 
 export default {

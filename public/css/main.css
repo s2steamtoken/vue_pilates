@@ -3363,6 +3363,39 @@ button {
 /*theme_27*/
 
 
+/*theme_28*/
+
+.payment-success .fas,
+.payment-failed .fas {
+    background: #b2937e;
+    border-radius: 100%;
+    padding: 3em;
+}
+
+.payment-success .fa-check:before,
+.payment-failed .fa-times:before {
+    color: white;
+    font-size: 25rem;
+}
+
+
+/*theme_28*/
+
+
+/*theme_29*/
+
+.payment-failed .fa-times:before {
+    padding: 3rem;
+}
+
+.payment-failed .fa-times:before {
+    font-size: 19rem;
+}
+
+
+/*theme_29*/
+
+
 /*general-class-all*/
 
 .general-class-all .form-control {
