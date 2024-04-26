@@ -23,7 +23,7 @@ async function forgetPassword(e) {
 
     e.preventDefault()
 
-    let result = await $sendApi(`api/user/forgetPassword `, forgetpass.value);
+    let result = await $sendApi(`/api/user/forgetPassword`, forgetpass.value);
 
     if (result.status == 500) {
 

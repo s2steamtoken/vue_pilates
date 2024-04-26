@@ -18,7 +18,7 @@ const isMenuActive = ref(false)
 function search() {
     closeSearch()
     router.push({
-        path: '/menu',
+        path: "/" + globalData.langUrl + "menu",
         force: true,
         query: $clearFilter(filterData.value),
     });
