@@ -2383,6 +2383,7 @@ button {
 
 .packages-for-offer {
     margin-bottom: 8em;
+    padding: 2em 0;
 }
 
 .packages-for-offer .single-part-packages {
@@ -2564,6 +2565,10 @@ button {
 
 .packages-form-start .your-opinion-inputs :checked+label {
     border: 1px solid black;
+}
+
+.packages-form-start .single-part-packages .info-part {
+    transform: translateY(4em);
 }
 
 

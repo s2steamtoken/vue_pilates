@@ -209,11 +209,11 @@ export default {
                             <div class="col-lg-8 col-md-11 col-sm-8 col-11">
                                 <div class="single-part-packages bg-dark-after" :style="`background-image:url(${apiData.package.image})`">
                                     <div class="padding-part">
-                                        <div class="d-flex justify-content-center">
+                                        <!-- <div class="d-flex justify-content-center">
                                             <nuxt-link :to="`/${ apiData.package.url}`" class="btn-select">
                                                 {{ translate('Selected Package') }}
                                             </nuxt-link>
-                                        </div>
+                                        </div> -->
                                         <div class="info-part">
                                             <h3 class="packages-part-text">{{ globalData.currency }} 
                                                 {{ selectedPrice }} 
