@@ -1,6 +1,7 @@
 <template>
     <div :class="`${pageLoad ? '' : 'invisible'}  min-h-screen text-default overflow-x-hidden`">
         <NuxtPage :appMedia="MediaIndex" />
+        <NuxtLoadingIndicator color="#E52E20" :height="4" :duration="2500" />
     </div>
 </template>
 
